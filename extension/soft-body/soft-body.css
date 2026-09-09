@@ -1,0 +1,21 @@
+body.sidepanel.soft-enabled{height:100vh;display:flex;flex-direction:column;overflow:hidden;background:var(--site-tint,#f7f8fb)}
+.soft-enabled>.topbar{position:relative;flex:none;min-height:52px}
+.soft-body-card{flex:none;margin:10px 12px 0;border:1px solid var(--site-line,#dce2ec);border-radius:19px;overflow:hidden;background:radial-gradient(ellipse at 50% 55%,#fff9 0 32%,transparent 65%),linear-gradient(150deg,var(--site-soft,#f1eef8),#f9fbff);box-shadow:inset 0 1px #fff,0 3px 14px #253a5510}
+.soft-body-stage{position:relative;width:100%;aspect-ratio:1;isolation:isolate;touch-action:auto;user-select:none}
+.soft-face{display:block;width:100%;height:100%;overflow:visible;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.soft-body-stage .soft-body-shape{pointer-events:all;touch-action:none;cursor:grab}
+.soft-body-stage:active .soft-body-shape{cursor:grabbing}
+.soft-corner-label{position:absolute;top:13px;left:14px;color:var(--site-accent-deep,#4b5870);font-size:11px;letter-spacing:.05em;pointer-events:none;z-index:1}
+.soft-corner-label small{display:block;margin-top:5px;font-size:9px;letter-spacing:0;color:var(--site-muted,#6c7b90)}
+.soft-tools{display:flex;align-items:center;justify-content:space-between;gap:4px;flex:none;padding:8px 12px 5px}.soft-tools button{font-size:10px;padding:5px 7px;min-height:27px}.soft-tools label{display:flex;align-items:center;white-space:nowrap;font-size:10px;color:var(--site-muted,#64748b);margin:0;gap:3px}.soft-tools input{margin:0}
+.soft-state-bar{flex:none;padding:2px 13px 7px;font-size:10px;line-height:1.5;color:var(--site-muted,#64748b);overflow-wrap:anywhere}.soft-state-bar details{display:inline;margin-left:7px;font-size:9px}.soft-state-bar summary{display:inline;cursor:pointer}.soft-state-bar p{margin:4px 0}.soft-state-bar details[open]{display:block;margin:3px 0 0}
+.soft-feedback-controls{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}.soft-feedback-controls button{font-size:10px;min-height:27px;padding:5px 7px}
+.soft-business-scroll{flex:1;min-height:110px;overflow:auto;overscroll-behavior:contain}
+.soft-business-scroll .site-connection-panel{margin-top:6px}.soft-enabled .site-presence.companion-frame{min-height:68px!important}
+/* Never place an alternate bubble inside the sidebar, including pending ACKs.
+   Capability failures remain readable in the inline state bar above. */
+.soft-feedback-fallback{display:none!important}
+@media(max-width:300px){.soft-tools{flex-wrap:wrap;justify-content:flex-start}.soft-corner-label small{max-width:180px}.soft-state-bar{font-size:9px}}
+@media(max-height:640px){body.sidepanel.soft-enabled{height:auto;min-height:100vh;overflow:auto}.soft-business-scroll{flex:none;overflow:visible;min-height:0}.soft-state-bar details[open]{display:block}.soft-enabled>.topbar{position:static}}
+[data-soft-reduced="true"] .soft-face{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){.soft-face{animation:none!important;transition:none!important}}

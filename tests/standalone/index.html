@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Text Memory 0.12.2 · 独立网页验收</title>
+  <link rel="stylesheet" href="./web/host.css">
+  <script type="module" src="./web/bridge.js"></script>
+  <script type="module" src="./web/host.js"></script>
+<script type="module" src="./web/large-library.js"></script>
+<script type="module" src="./web/extraction-fixture.js"></script>
+<script type="module" src="./web/coverage-fixture.js"></script>
+</head>
+<body>
+  <header class="lab-header">
+    <div class="brand"><span class="brand-mark">TM</span><div><strong>Text Memory · 网页验收</strong><small>0.12.2 原版界面与核心 · 独立本地数据</small></div></div>
+    <div class="lab-badge">原创模拟 AI · 不连接真实网站</div>
+  </header>
+  <nav class="toolbar" aria-label="测试导航">
+    <button id="focusPreview" aria-pressed="false">专注界面预览</button>
+    <div class="view-tabs"><button id="manageView" aria-pressed="true">1. 管理资料与任务</button><button id="sidebarView" aria-pressed="false">侧栏布局预览</button><button id="mockView" aria-pressed="false">2. 模拟 AI 网页</button></div>
+    <label class="sidebar-size-label">侧栏测试宽度 <select id="sidebarWidth"><option>280</option><option>320</option><option selected>390</option><option>400</option></select></label>
+    <label class="scenario-label">回复场景 <select id="scenario"><option value="valid">有效记忆更新</option><option value="clear_progress">建议清空进度</option><option value="plain">只有普通正文</option><option value="stream">流式正文与完整更新</option><option value="search">检索补充后记忆更新</option><option value="search_loop">持续检索请求（检查两次上限）</option><option value="extraction_valid">原文提炼：有效精确引用</option><option value="extraction_mixed">原文提炼：有效、疑点和虚构引用</option><option value="malformed">JSON 格式损坏</option><option value="old">旧资料包回执</option><option value="no_effect">发送按钮无效果</option></select></label>
+    <button id="seedCoverage">载入覆盖补读验收资料</button><button id="seedExtraction">载入 3 片原创提炼文档</button><button id="seedExtractionQueue">载入 5 片队列验收文档</button><button id="seedLargeLibrary">载入 1200 条原创验收资料</button><button id="openFloating" class="primary">打开原版对话浮窗</button>
+    <button id="toggleLog" aria-expanded="false">测试记录 <span id="eventCount">0</span></button>
+    <label><input type="checkbox" id="unsupportedEditor">模拟输入框不兼容（仅本地，测真实失败反馈）</label>
+    <label><input type="checkbox" id="ambiguousEditor">多个候选输入框（本地 DOM 夹具）</label>
+<label><input type="checkbox" id="delayTargetRead">延迟读取完成 2 秒（保留真实结果，测试重复点击）</label>
+<label><input type="checkbox" id="delayFeedbackReceipt">延迟真实反馈回执 2 秒（测试重连中断）</label>
+    <button id="disconnectFeedback">断开反馈通道（仅本地，随后从侧栏重连）</button>
+    <label><input type="checkbox" id="blockFloatingBoot">模拟浮窗初始化失败（仅本地测试）</label>
+    <label><input type="checkbox" id="simulateSiteGrant" checked>模拟站点授权（不打开真实 AI）</label>
+    <button id="blankFloating">模拟已打开浮窗变白（仅本地测试）</button>
+  </nav>
+  <div class="notice" role="status" id="hostStatus">先在管理页创建资料库和持续任务，再打开浮窗发送。回复由可控本地脚本生成；这里检验软件流程，不评价模型记忆能力。</div>
+  <main id="stage">
+    <iframe id="managerFrame" title="原版 Text Memory 管理页" src="./product/manager.html" allow="clipboard-write"></iframe>
+    <iframe id="mockFrame" title="本地模拟 AI 网页" src="./web/mock-site.html" hidden allow="clipboard-write"></iframe>
+  </main>
+  <aside id="testLog" hidden aria-label="本地测试记录"><div class="log-title"><strong>本地操作记录</strong><button id="clearLog">清空记录</button><button id="closeLog" aria-label="关闭测试记录">关闭</button></div><p>记录页面操作状态，不把“脚本已回复”视为业务验收通过。</p><ol id="eventList"></ol></aside>
+</body>
+</html>

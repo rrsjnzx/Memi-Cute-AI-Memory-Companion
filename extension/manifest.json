@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Text Memory · 外源记忆库",
+  "version": "0.12.2",
+  "description": "本地外置记忆与跨 AI 对话浮窗。用户发送问题，自动整理任务进度与记忆候选，支持审核和备份。",
+  "minimum_chrome_version": "116",
+  "permissions": ["sidePanel", "storage", "activeTab", "scripting", "clipboardWrite"],
+  "optional_host_permissions": ["https://chatgpt.com/*", "https://chat.deepseek.com/*", "https://www.kimi.com/*", "https://grok.com/*", "https://claude.ai/*", "https://www.qianwen.com/*", "https://gemini.google.com/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "side_panel": {"default_path": "sidepanel.html"},
+  "options_page": "manager.html",
+  "web_accessible_resources": [{"resources":["floating.html"],"matches":["https://chatgpt.com/*","https://chat.deepseek.com/*","https://www.kimi.com/*","https://grok.com/*","https://claude.ai/*","https://www.qianwen.com/*","https://gemini.google.com/*"]}],
+  "action": {"default_title": "打开外源记忆库"},
+  "commands": {"run-site-self-test":{"suggested_key":{"default":"Alt+Shift+Y"},"description":"当前 AI 网页自检：插入虚构资料后立即撤销，不发送"}},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'"}
+}

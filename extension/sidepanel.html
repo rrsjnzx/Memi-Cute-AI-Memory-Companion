@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Text Memory · 任务工作台</title><link rel="stylesheet" href="ui.css"><link rel="stylesheet" href="site-theme.css"><link rel="stylesheet" href="soft-body/soft-body.css"><link rel="stylesheet" href="soft-body/stage-decor.css"><link rel="stylesheet" href="soft-body/motion.css">
+</head>
+<body class="sidepanel">
+<header class="topbar"><div><span class="brand">TM</span><div class="brand-copy"><strong>Text Memory</strong><small>你的外置记忆工作台</small></div><span class="version">0.12.2</span></div><button id="open-manager">打开完整管理页</button></header>
+<section id="soft-body-card" class="soft-body-card" aria-label="顶部可揉颜表情本体">
+  <div id="soft-body-stage" class="soft-body-stage">
+    <span class="soft-corner-label">AI 可揉颜表情 <small>只在本体内轻戳、揉搓、拉扯</small></span>
+    <span class="stage-decor" aria-hidden="true" data-soft-noninteractive>
+      <span class="stage-star s1">✦</span><span class="stage-star s2">·</span>
+      <span class="stage-star s3">✧</span><span class="stage-star s4">⋆</span>
+      <span class="stage-star s5">·</span><span class="stage-star s6">✧</span>
+      <span class="stage-star s7">⋆</span><span class="stage-star s8">✦</span>
+      <span class="stage-margin-note">慢慢想 · 轻轻揉</span><span class="stage-margin-code">MEMORY</span>
+    </span>
+  </div>
+</section>
+<div class="soft-tools"><button id="soft-poke" type="button">轻戳本体</button><button id="soft-close-feedback" type="button" disabled>收起反馈</button><a id="soft-open-atlas" href="soft-body/atlas.html" target="_blank" rel="noopener">表情册 · 224</a><label><input id="soft-reduced" type="checkbox">少动效</label><button id="soft-visibility" type="button">隐藏可揉颜表情</button></div>
+<div class="soft-state-bar"><span id="soft-local-state" role="status" aria-live="polite">等待操作</span><p id="soft-capability">正在核对外侧显示能力；结果始终保留在本体和文字状态中。</p><div class="soft-feedback-controls"><button id="soft-reconnect-feedback" type="button">重新连接外侧反馈</button><button id="soft-confirm-right-layout" type="button" hidden>确认侧栏在右侧</button></div><details><summary>待处理问题</summary><p id="soft-unresolved"></p></details></div>
+<aside id="soft-feedback-fallback" class="soft-feedback-fallback" hidden inert aria-hidden="true"><div class="soft-feedback-face"></div><p class="soft-feedback-text"></p><button type="button" tabindex="-1" aria-label="收起反馈">×</button></aside>
+<div id="soft-business-scroll" class="soft-business-scroll">
+
+<section id="site-connection-panel" class="site-connection-panel" aria-label="连接 AI 网站">
+  <div class="site-presence companion-frame" data-companion-frame><div class="site-presence-copy"><p class="eyebrow">同一份记忆 · 接续每一次对话</p><h2><span class="site-mark" data-site-mark aria-hidden="true">TM</span><span data-site-name>选择 AI，接续任务</span></h2><p id="site-connection-status" role="status" aria-live="polite">选择站点后连接；任务和记忆仍保存在本地。</p></div><img class="site-companion" data-companion="side" alt="" aria-hidden="true" draggable="false" hidden></div>
+  <div id="site-shortcuts" class="site-shortcuts" role="group" aria-label="选择并连接站点">
+    <button type="button" data-connect-site="chatgpt" aria-pressed="false"><span class="site-dot" aria-hidden="true">G</span>ChatGPT</button>
+    <button type="button" data-connect-site="deepseek" aria-pressed="false"><span class="site-dot" aria-hidden="true">D</span>DeepSeek</button>
+    <button type="button" data-connect-site="claude" aria-pressed="false"><span class="site-dot" aria-hidden="true">C</span>Claude</button>
+    <button type="button" data-connect-site="kimi" aria-pressed="false"><span class="site-dot" aria-hidden="true">K</span>Kimi</button>
+    <button type="button" data-connect-site="grok" aria-pressed="false"><span class="site-dot" aria-hidden="true">X</span>Grok</button>
+    <button type="button" data-connect-site="qianwen" aria-pressed="false"><span class="site-dot" aria-hidden="true">千</span>千问</button>
+    <button type="button" data-connect-site="gemini" aria-pressed="false" title="Gemini 输入适配预览；当前尚无真实回复验收"><span class="site-dot" aria-hidden="true">✦</span>Gemini<span class="site-preview-tag">预览</span></button>
+  </div>
+  <div class="site-connection-tools"><label for="connect-site-origin">站点<select id="connect-site-origin"></select></label><button id="connect-site" type="button" class="secondary">连接所选站点</button><button type="button" class="quiet companion-cycle" data-cycle-companions>换形象</button><button type="button" class="quiet companion-toggle" data-toggle-companions aria-pressed="true">隐藏形象</button></div>
+</section>
+<div class="workspace">
+  <aside class="sidebar">
+    <div class="workspace-tasks"><div class="sidebar-heading"><h2>我的任务</h2><button id="workspace-new-task" type="button" aria-label="从任务列表新建任务">新建</button></div><div id="workspace-task-list" aria-label="已保存任务"><p class="hint">保存后的任务会显示在这里。</p></div></div>
+    <details id="workspace-advanced"><summary>设置与高级工具</summary><details class="setup-tools"><summary>资料库与网页权限</summary><p class="eyebrow">本轮允许使用的资料库</p><div id="libraries"></div><form id="new-library"><label for="library-name">新建资料库</label><div class="inline"><input id="library-name" placeholder="填写新资料库名称" required maxlength="200"><button type="submit" aria-label="创建资料库">创建</button></div></form>
+<div class="session"><strong>当前网页</strong><p id="target-status">页面访问未启用。资料管理与复制可独立使用。</p><details><summary>手动连接与诊断</summary><button id="read-target">读取当前网页草稿</button><button id="bind-target">绑定所选库到当前会话</button></details><button id="pause-target" class="quiet">暂停页面访问</button><p class="hint">加入草稿不等于发送。服务器实际上下文始终未知。</p></div>
+</details><details class="verification-tools"><summary>验收与自检工具</summary><button id="site-self-test">当前网页自检：插入后撤销</button><p class="hint">使用独立虚构数据，不发送消息。快捷键 Alt+Shift+Y（若已分配）。</p><details><summary>网页自检结果</summary><button id="read-site-self-test">读取最近结果</button><pre id="site-self-test-result">尚未运行</pre></details><button id="functional-test">功能验收：资料库完整流程</button><p class="hint">独立原创资料，检查导入、检索、版本、事务和备份恢复。不修改正式库，不写入网页草稿。</p><details><summary>功能验收结果</summary><button id="read-functional-test">读取最近功能结果</button><pre id="functional-test-result">尚未运行</pre></details><button id="prepare-restart-check">准备重启检查点</button><button id="verify-restart-check">验证重启后数据</button><p class="hint">先准备，再正常关闭并重启浏览器，最后验证。仅使用独立测试库；不要在重启后再次准备。</p><details><summary>重启验收结果</summary><button id="read-restart-check">读取最近重启结果</button><pre id="restart-check-result">尚未运行</pre></details></details><details><summary>演示资料</summary><button id="seed-demo" class="secondary">载入原创演示数据</button><p class="hint">所有业务数据保存在当前扩展的 IndexedDB。不同浏览器配置不自动同步。</p></details></details>
+    <div class="companion-note companion-footer companion-frame" data-companion-frame data-companion-slot="tools-corner"><p class="sidebar-footnote companion-note-copy">记忆保存在本地<br>同一任务可在不同 AI 网页继续</p><img data-companion="side" data-companion-offset="1" alt="" aria-hidden="true" draggable="false" hidden></div>
+  </aside>
+  <main>
+    <div id="action-feedback" class="action-feedback" role="status" aria-live="polite" aria-atomic="true" hidden></div><div id="notice" role="status" aria-live="polite"></div>
+    <nav class="workspace-nav" aria-label="工作区"><div class="primary-nav"><button data-tab="memory" aria-pressed="true">任务工作台</button><button data-tab="entries">资料库</button><button data-tab="backup">导入资料</button></div><details class="secondary-nav"><summary>更多工具</summary><div><button data-tab="checks">检查与诊断</button><button data-tab="schemas">模板与规则</button></div></details></nav>
+    <section id="tab-memory">
+      <div class="page-heading"><div class="memory-heading"><p class="eyebrow">目标 · 资料 · 重要记忆</p><h1>任务工作台</h1><p class="hint">把要完成的事和必须记住的重点放在一起。</p></div><div class="floating-launch"><button id="open-floating" class="primary">打开网页浮窗</button><p class="hint">在 AI 网页继续聊天</p></div></div>
+      <details id="workspace-onboarding" class="onboarding" hidden><summary>只想先整理资料？也可以单独创建资料库</summary><p class="hint">这是可选操作。新建任务会自动创建同名资料库。</p><label for="workspace-library-name">资料库名称</label><div class="inline"><input id="workspace-library-name" maxlength="200" placeholder="例如：写作资料、项目研究"><button id="workspace-create-library" type="button" class="primary">创建资料库</button></div></details>
+      <div class="task-picker"><label>当前任务<select id="memory-task-select"></select></label><div class="actions"><button id="load-memory-task" hidden>载入任务</button><button id="new-memory-task" class="quiet">新建任务</button></div></div>
+      <p id="memory-task-status" class="hint" role="status"></p>
+      <div id="task-overview" class="task-overview" aria-label="任务概览"></div>
+      <section id="handoff-card" class="handoff-card" aria-label="跨 AI 任务接力">
+  <div class="handoff-heading companion-frame" data-companion-frame><img class="handoff-companion" data-companion="side" data-companion-offset="1" alt="" aria-hidden="true" draggable="false" hidden><div><p class="eyebrow">换个 AI，也能接着做</p><h2>跨 AI 任务包</h2><p class="hint">把目标、进度和重要记忆带到下一站。</p></div><button id="handoff-toggle" type="button" class="secondary" aria-controls="handoff-panel" aria-expanded="false">跨 AI 接力</button></div>
+  <div id="handoff-panel" hidden>
+    <p class="hint">携带已保存目标、进度、重要记忆与下一步问题；复制后由你在目标 AI 发送。</p>
+    <div class="handoff-fields"><label for="handoff-source">接力来源<select id="handoff-source"><option value="">未指定 / 本地任务</option></select></label><span class="handoff-direction" aria-hidden="true">→</span><label for="handoff-target">目标 AI<select id="handoff-target"></select></label></div>
+    <label for="handoff-question">交给下一个 AI 的问题<textarea id="handoff-question" rows="2" maxlength="4000" placeholder="接下来需要完成什么？目标 AI 应从哪里继续？"></textarea></label>
+    <label class="handoff-budget" for="handoff-budget">任务包字符预算<input id="handoff-budget" type="number" min="128" max="100000" value="12000"></label>
+    <div class="actions handoff-actions"><button id="handoff-preview-button" type="button" class="primary">生成接力预览</button><button id="handoff-copy" type="button" disabled>复制任务包</button><button id="handoff-open-target" type="button">打开目标 AI</button></div>
+    <p id="handoff-summary" class="handoff-summary" role="status" aria-live="polite">选择一个已保存任务后，准备专门用于跨 AI 接续的资料。</p><div id="handoff-problems" class="pack-problems" role="alert" hidden></div>
+    <details class="handoff-preview-details"><summary>查看完整任务包</summary><textarea id="handoff-preview" rows="8" readonly aria-label="跨 AI 任务包预览"></textarea></details>
+  </div>
+</section>
+      <div class="task-materials"><div><span class="eyebrow">任务资料</span><p id="task-library-label">选择任务后，查看它使用的资料库。</p></div><div class="actions"><button id="task-browse-library" type="button">浏览资料</button><button id="task-import" type="button">导入到此库</button></div></div>
+      <div class="task-workspace-grid">
+        <div class="task-card">
+          <details id="memory-editor" open><summary>目标与进度</summary>
+            <div class="grid2"><label>任务名称<input id="memory-name" maxlength="200" placeholder="给这件事一个名字"></label><label>任务资料库<select id="memory-library"></select></label></div>
+            <label class="goal-label">任务目标<textarea id="memory-goal" rows="3" maxlength="12000" placeholder="最终要完成什么？最需要保持的方向是什么？"></textarea></label>
+            <details class="task-detail-fields"><summary>约束与当前进度</summary><label>必须保持的约束<textarea id="memory-constraints" rows="2" maxlength="12000" placeholder="不可改动的设定、交付要求、能力或范围边界"></textarea></label><div class="grid2"><label>当前进度<textarea id="memory-progress" rows="3" maxlength="12000" placeholder="已经完成或确认的事项"></textarea></label><label>待解决事项<textarea id="memory-openQuestions" rows="3" maxlength="12000" placeholder="下一步、待确认的问题"></textarea></label></div></details>
+            <div class="actions task-save-actions"><button id="save-memory-task" class="primary">保存任务与重要记忆</button><button id="reload-memory-task" class="quiet">放弃修改并重载</button></div>
+          </details>
+        </div>
+        <section class="task-core-panel" aria-label="重要记忆">
+          <div class="memory-companion-ledge companion-frame" data-companion-frame data-companion-only hidden aria-hidden="true"><span class="ledge-caption">记住重点<br>随时接着做</span><img class="memory-companion" data-companion="top" data-companion-offset="1" alt="" draggable="false" hidden></div>
+          <div class="section-top compact"><div><h2>重要记忆</h2><p class="hint">每轮都携带，帮助 AI 保持任务重点。</p></div><button id="open-core-picker" type="button">从资料库选择</button></div>
+          <div id="task-core-cards" class="task-core-cards"><p class="empty">先保存任务，再添加必须记住的内容。</p></div>
+          <div class="quick-memory"><label for="quick-memory-text">直接写下一条记忆</label><textarea id="quick-memory-text" rows="3" maxlength="12000" placeholder="例如：林汐不会游泳；拿到线索不等于已经取得钥匙。"></textarea><button id="quick-add-memory" type="button">保存并设为重要记忆</button><p class="hint">保存前请核对内容。你确认的记忆会加入当前任务。</p></div>
+          <details id="core-picker"><summary>选择已有重要记忆</summary><p class="hint">仅使用当前任务资料库。核心须已确认且允许输出；待审核和仅限本地的资料保留原有限制。</p>
+            <div class="core-picker-filters"><label>查找资料<input id="memory-core-search" maxlength="2000" placeholder="按标题或别名查找"></label><label>查看范围<select id="memory-core-filter"><option value="all">全部资料</option><option value="eligible">当前可选</option><option value="selected">已经选择</option></select></label></div>
+            <p id="memory-core-count" class="hint" role="status" aria-live="polite">选择资料库后显示可用条目。</p><div id="memory-core-list" class="memory-core-list"></div>
+            <div class="core-picker-pagination" aria-label="重要记忆选择分页"><button id="memory-core-prev" type="button" disabled>上一页</button><span id="memory-core-page-info">第 1 / 1 页</span><button id="memory-core-next" type="button" disabled>下一页</button></div>
+            <p class="hint">选择调整后，点击“保存任务与重要记忆”生效。已选但受限的核心仍会在上方提示，需要明确处理。</p>
+          </details>
+        </section>
+      </div>
+      <details id="manual-workflow" class="manual-workflow"><summary>高级：手动交付与诊断</summary><p class="hint">需要复制资料、检查网页草稿或处理原始回执时使用。日常聊天可直接打开网页浮窗。</p>
+<p id="workflow-status" class="workflow-status" role="status">先选择已有任务，或新建任务。</p>
+<div class="workflow-step"><h2><span class="step-number" aria-hidden="true">1</span><span>准备本轮资料</span></h2>
+<label>这一轮要做什么？<textarea id="memory-question" rows="2" maxlength="4000" placeholder="例如：继续这个角色的场景；核对这一版方案"></textarea></label>
+<button id="prepare-memory-web" class="primary">准备本轮资料</button>
+<p class="hint">携带目标、进度和长期核心；保存后可随时继续。</p>
+<details><summary>本轮记录与恢复</summary><p id="memory-round-status" class="hint" role="status"></p>
+<p id="memory-queue-status" class="hint" role="status" hidden></p><button id="cancel-memory-extraction-queue" type="button" hidden>取消提炼批次，保留当前片段</button>
+<div class="actions"><button id="resume-memory-round" disabled>恢复未完成轮次</button><button id="abandon-memory-round" disabled>放弃此轮</button><button id="prepare-memory-handoff">继续本轮 / 准备接力包</button></div>
+<p class="hint">轮次没有固定时长，确认一次记忆更新后结束。改做新问题可点“同步资料并复制”，旧记录保留。</p>
+<div id="memory-round-history"></div><button id="clear-memory-rounds">清理此任务已结束轮次</button></details></div>
+<div id="tab-context" class="workflow-step"><h2><span class="step-number" aria-hidden="true">2</span><span>加入 AI 网页草稿</span></h2>
+<p id="pack-status" class="hint">尚未生成</p>
+<div id="pack-problems" class="pack-problems" role="alert" aria-atomic="true" hidden></div>
+<div class="actions delivery-actions"><button id="insert-pack" class="primary">连接当前网页并加入草稿</button><button id="copy-pack">复制资料包</button><button id="undo-pack" class="quiet">撤销本次加入</button></div>
+<p class="hint">回到 AI 网页后点加入；核对草稿，再由你发送。</p>
+<div class="budget-control"><label>本轮字符预算<input id="budget" type="number" min="128" max="100000" value="6000"></label><button id="use-recommended-budget" class="secondary" hidden>应用建议预算并重试</button></div>
+<div class="actions"><button id="sync-memory-round" class="secondary">同步资料并复制</button></div><p class="hint">任务或资料已修改、要改做新问题时点同步；无需先手动放弃。没有修改时保留原资料编号。</p>
+<details class="pack-details"><summary>查看本轮资料包</summary><p id="active-memory-label" class="hint"></p><textarea id="pack-preview" readonly rows="10" aria-label="资料包预览"></textarea><div id="pack-exclusions"></div></details>
+<details><summary>调整检索、范围与条目</summary>
+<label for="task">本轮任务或检索问题</label><textarea id="task" rows="3" placeholder="先准备本轮资料，或在此自定义检索"></textarea>
+<div class="grid2"><label>适用范围<input id="scope" placeholder="空表示不指定范围"></label><label>适用日期<input id="as-of" type="date"></label></div>
+<label class="check"><input id="include-disputed" type="checkbox">允许将冲突双方作为争议资料一起预览</label>
+<div class="actions"><button id="retrieve">检索条目</button><button id="build-pack">更新资料包预览</button></div>
+<h3>匹配与手动选择</h3><button id="remember-core-selection">将当前选择加入长期核心</button><div id="retrieval-results" class="stack"></div>
+<details><summary>未召回 / 排除原因</summary><div id="excluded-results"></div></details></details>
+<details><summary>写入前的原草稿</summary><pre id="draft-preview">尚未读取</pre></details></div>
+<div class="workflow-step"><h2><span class="step-number" aria-hidden="true">3</span><span>读取回复，确认记忆</span></h2>
+<p class="hint">AI 按本轮资料中的格式输出后，可直接读取，无需选中文字。开启自动接收后，此侧栏保持打开即可等待回执。</p>
+<div class="actions"><button id="read-latest-memory" class="secondary">读取最新回复</button><label class="check"><input id="auto-memory-toggle" type="checkbox">自动接收当前网页回复</label></div>
+<p id="auto-memory-status" class="reply-status" role="status" aria-live="polite" data-state="idle">自动接收未开启。只接收当前任务的记忆区段，更新经你确认后保存。</p>
+<div id="reply-sync-help" class="pack-problems" role="status" hidden><p id="reply-sync-reason"></p><button id="sync-memory-reply" class="secondary">同步资料并复制</button><p class="hint">按当前任务整理资料，保留旧记录。粘贴发送给 AI 后再读取回复，无需手改编号。</p></div>
+<label>已收到的记忆区段（也可粘贴）<textarea id="memory-update-text" rows="3" maxlength="100000" placeholder="自动接收，或粘贴包含 TEXT-MEMORY-SEARCH / TEXT-MEMORY-UPDATE 的完整区段"></textarea></label>
+<div class="actions"><button id="process-memory-reply">处理收到的回复</button><button id="apply-memory-update" class="primary" disabled>确认更新进度并保存候选</button><button id="clear-memory-reply">清空接收区</button></div>
+<p id="reply-draft-status" class="reply-status" role="status">接收原文会保存为本地草稿，确认后才写入任务记忆。</p>
+<details id="reply-recovery" class="advanced"><summary>接收记录与恢复</summary>
+<p id="reply-recovery-status" class="hint">载入任务后可查看本地接收记录。</p>
+<label>选择接收记录<select id="reply-recovery-select"></select></label>
+<div class="actions"><button id="restore-reply-draft" disabled>恢复所选回复</button><button id="read-reply-drafts">刷新接收记录</button><button id="discard-reply-draft" disabled>清空所选接收记录</button></div>
+<label>所选记录原文（只读）<textarea id="reply-recovery-text" rows="4" readonly></textarea></label>
+<p class="hint">本地保留最多 32 份、合计 2 MiB。未确认原文不会被自动淘汰；空间不足时回收最旧的已处理或已清空记录。此记录不随资料库备份导出。</p>
+</details>
+<pre id="memory-update-preview">处理回复后，在这里核对记忆更新。</pre>
+<p class="hint">补充资料会回到第 2 步；进度更新经你确认后保存，新事实仍需审核。</p>
+<details><summary>选区读取与手动分步处理</summary><div class="actions"><button id="read-and-process-memory">读取并处理选中回复</button><button id="read-memory-reply">只读取选中回复</button><button id="execute-memory-search">执行记忆检索</button><button id="preview-memory-update">预览记忆更新</button></div></details>
+</div>
+      </details>
+    </section>
+<section id="tab-entries" hidden>
+  <div class="companion-shelf library-companion-shelf companion-frame" data-companion-frame data-companion-only data-companion-slot="library-shelf" hidden aria-hidden="true"><span class="ledge-caption">资料有出处<br>记忆可回看</span><img data-companion="top" alt="" draggable="false" hidden></div>
+  <div class="section-top"><div><h1>资料库</h1><p id="library-context-header" class="hint">按资料库浏览，查看内容后再决定如何使用。</p><p id="counts" class="muted" role="status" aria-live="polite"></p></div><button id="new-entry" class="primary">新建资料</button></div>
+  <div class="library-browser-toolbar"><label for="entry-library">资料库<select id="entry-library" aria-label="管理资料库"></select></label><div id="entry-view-options" class="entry-view-options" role="group" aria-label="资料查看方式"><button id="show-entry-view" type="button" aria-pressed="true" aria-controls="entry-browser-pane">按条目查看</button><button id="show-source-view" type="button" aria-pressed="false" aria-controls="source-browser-pane">按文档查看</button><button id="show-candidate-view" type="button" aria-pressed="false" aria-controls="candidate-browser-pane">提炼候选</button></div></div>
+  <div id="entry-browser-pane" class="entry-browser">
+    <aside class="entry-filters" aria-label="筛选资料">
+      <div class="entry-filter-heading"><h2>查找资料</h2><button id="entry-reset-filters" type="button" class="quiet">重置</button></div>
+      <label for="entry-search">搜索<input id="entry-search" aria-label="搜索条目" maxlength="2000" placeholder="标题、别名、正文关键词"></label>
+      <label for="entry-filter">状态与用途<select id="entry-filter" aria-label="审核状态"><option value="all">全部状态</option><option value="confirmed">已确认</option><option value="pending">待审核</option><option value="conflict">存在冲突</option><option value="archived">已归档 / 替代</option><option value="important">当前任务重要记忆</option><option value="local_only">仅限本地</option></select></label>
+      <label for="entry-source">来源文档<select id="entry-source"><option value="">全部来源</option></select></label>
+      <label for="entry-kind">条目类型<select id="entry-kind"><option value="">全部类型</option><option value="fact">事实</option><option value="entity">对象</option><option value="rule">用户约束</option><option value="event">事件</option><option value="preference">偏好</option><option value="note">笔记</option></select></label>
+      <label for="entry-tag">标签<select id="entry-tag"><option value="">全部标签</option></select></label>
+      <label for="entry-sort">排序<select id="entry-sort" aria-label="排序"><option value="updated">最近修改</option><option value="title">标题</option><option value="relevance">相关度</option></select></label>
+    </aside>
+    <div id="entry-list-column" class="entry-list-column">
+      <div class="entry-selection-bar"><label class="check"><input id="entry-select-page" type="checkbox">当前页全选</label><span id="entry-selection-count" role="status" aria-live="polite">已选 0 条</span><button id="entry-clear-selection" type="button" class="quiet">取消批选</button></div>
+      <p class="entry-selection-note hint">批选只针对当前页，跨页选择保留；更改筛选清除批选。</p>
+      <details class="entry-batch-tools"><summary>批量整理</summary><p class="hint">先选择资料，再预览本次修改。归档保留原文与历史。</p><label for="entry-batch-tag">要添加的标签<input id="entry-batch-tag" maxlength="100" placeholder="例如：人物设定、待核对来源"></label><div class="actions"><button id="entry-batch-add-tag" type="button">预览添加标签</button><button id="entry-batch-archive" type="button">预览归档</button></div><div id="entry-batch-panel" class="entry-batch-panel" hidden><div id="entry-batch-preview" role="status" aria-live="polite"></div><div class="actions"><button id="entry-batch-confirm" type="button" class="primary">确认批量修改</button><button id="entry-batch-cancel" type="button">取消</button></div></div></details>
+      <div id="entry-list" class="entry-list" aria-label="条目列表"></div>
+      <div class="entry-pagination" aria-label="资料列表分页"><div class="entry-page-navigation"><button id="entry-prev" type="button" disabled>上一页</button><span id="entry-page-info" role="status" aria-live="polite">第 1 / 1 页</span><button id="entry-next" type="button" disabled>下一页</button></div><div class="entry-page-options"><label for="entry-page-size">每页<select id="entry-page-size"><option value="25">25 条</option><option value="50" selected>50 条</option><option value="100">100 条</option></select></label><div class="entry-page-jump"><label for="entry-page-number">前往页码<input id="entry-page-number" type="number" min="1" step="1" value="1" inputmode="numeric"></label><button id="entry-page-go" type="button">跳转</button></div></div></div>
+    </div>
+    <div class="entry-reading-stack"><div id="entry-read-view" class="detail"><div class="empty"><h2>选择一条资料</h2><p>在这里阅读正文、核对来源，或加入任务的重要记忆。</p></div></div><div id="entry-detail" class="detail" hidden><p class="empty">选择一个条目，查看字段、来源和版本。</p></div></div>
+  </div>
+  <section id="source-browser-pane" class="source-browser" aria-label="来源文档" hidden>
+    <div class="source-list-column">
+      <div class="source-browser-filters"><label for="source-search">查找文档<input id="source-search" maxlength="2000" placeholder="搜索文档名称或原文"></label><label for="source-filter">整理状态<select id="source-filter"><option value="all">全部文档</option><option value="pending">有待审核</option><option value="unlinked">仅历史关联</option></select></label><p id="source-count" class="hint" role="status" aria-live="polite">选择资料库后显示来源文档。</p></div>
+      <div id="source-list" class="source-list" aria-label="文档列表"></div>
+      <div class="source-pagination" aria-label="文档列表分页"><button id="source-prev" type="button" disabled>上一页</button><span id="source-page-info" role="status" aria-live="polite">第 1 / 1 页</span><button id="source-next" type="button" disabled>下一页</button></div>
+    </div>
+    <div id="source-detail" class="source-detail detail"><div class="empty"><h2>请选择文档</h2><p>查看保存的原文、关联条目与审核进度。</p></div></div>
+  </section>
+  <section id="candidate-browser-pane" class="candidate-browser" aria-label="提炼候选集中审核" hidden>
+    <div class="candidate-heading"><h2>核对提炼候选</h2><p class="hint">对照原文逐条选择，再统一确认。AI 自评只是提示，逐字引用匹配也不保证候选含义正确；审核不会自动设为任务重要记忆。</p></div>
+    <div class="candidate-filters"><label for="candidate-source">来源文档<select id="candidate-source"><option value="">全部来源</option></select></label><label for="candidate-assessment">AI 自评<select id="candidate-assessment"><option value="">全部自评</option><option value="supported">有依据</option><option value="uncertain">不确定</option><option value="conflict">可能冲突</option><option value="unknown">未明确</option></select></label><label for="candidate-search">查找候选<input id="candidate-search" maxlength="2000" placeholder="搜索标题、正文或引用"></label></div>
+    <p id="candidate-count" class="hint" role="status" aria-live="polite"></p>
+    <div class="candidate-selection-bar"><span id="candidate-selection-count" role="status" aria-live="polite">已选 0 条 / 最多 50 条</span><button id="candidate-clear-selection" type="button" disabled>取消选择</button><button id="candidate-review-preview-button" class="primary" type="button" disabled>预览所选审核</button></div><p class="hint">每页 25 条，逐项勾选；翻页保留选择，更改筛选或资料库会清除选择。</p>
+    <div id="candidate-review-panel" class="candidate-review-panel" hidden><div id="candidate-review-preview" role="status" aria-live="polite"></div><div class="actions"><button id="candidate-review-confirm" class="primary" type="button" disabled>确认所选记忆</button><button id="candidate-review-cancel" type="button">返回核对</button></div></div>
+    <div id="candidate-list" class="candidate-list" aria-label="待审核提炼候选"></div>
+    <div class="source-pagination" aria-label="提炼候选分页"><button id="candidate-prev" type="button" disabled>上一页候选</button><span id="candidate-page-info" role="status" aria-live="polite">第 1 / 1 页</span><button id="candidate-next" type="button" disabled>下一页候选</button></div>
+  </section>
+</section>
+<section id="tab-checks" hidden><h1>检查输出，定位遗漏</h1><p class="muted">仅检查已配置的字段与规则。请粘贴 JSON：[{"entryId":"…","fields":{"value":10}}]。任意自由文本不自动映射。</p>
+<textarea id="answer-json" rows="7" aria-label="待检查结构化回答" placeholder='[{"entryId":"entry_…","fields":{"value":80}}]'></textarea><label class="check"><input id="pairing" type="checkbox">我确认这份手动提供的回答对应当前资料包</label><div class="actions"><button id="check-answer" class="primary">检查回答</button><button id="diagnose">运行记忆遗漏诊断</button><button id="run-probes">运行隔离回归探针</button></div>
+<div id="check-results"></div><h2>本轮关键记忆清单</h2><p class="hint">由你指定应使用的条目与字段，不根据检索结果反向生成标准答案。</p><form id="watch-form" class="grid3"><label>条目<select id="watch-entry"></select></label><label>必要字段（逗号分隔）<input id="watch-fields" value="value"></label><label>任务类型（可选）<input id="watch-task"></label><button>确认添加检查项</button></form><div id="watch-list"></div><div id="diagnostic-results"></div></section>
+<section id="tab-schemas" hidden><h1>定义字段与行为规则</h1><h2>字段模板</h2><p class="hint">模板变更创建新版本；既有条目保留原版本，迁移前先检查影响。无密钥模式为人工定义。</p>
+<div class="grid2"><label>选择模板<select id="template-select"></select></label><label>模板名称<input id="template-name" placeholder="例如：产品参数"></label></div><div id="template-fields"></div><div class="actions"><button id="add-field">增加字段</button><button id="save-template" class="primary">保存模板新版本</button><button id="migrate-template">预检并迁移当前库条目</button></div><label>导入字段草案 JSON（可由 Python propose-schema 生成）<textarea id="schema-draft" rows="3" placeholder='{"name":"任务","fields":[…]}'></textarea></label><button id="load-schema-draft">载入草案供编辑</button>
+<h2>明确规则</h2><form id="rule-form"><div class="grid3"><label>适用库<select id="rule-library"></select></label><label>限定条目（可选）<select id="rule-entry"></select></label><label>字段键<input id="rule-field" value="value" required></label><label>规则类型<select id="rule-type"><option value="equals">值相等</option><option value="max">数值上限</option><option value="min">数值下限</option><option value="enum">枚举</option><option value="required">必填</option><option value="unique">当前库有效值唯一</option><option value="reference">对象引用</option><option value="transition">状态转换</option></select></label><label>值 / 选项 / 转换对（JSON）<input id="rule-value" value="100"></label><label>适用范围<input id="rule-scope"></label></div><label>合法例外（可选 JSON，如 {"field":"approved","equals":true}）<input id="rule-exception"></label><label>转入该状态需要确认（可选，如 completed）<input id="rule-confirmation"></label><button class="primary">确认新增规则</button></form><div id="rule-list"></div></section>
+
+    <section id="tab-backup" hidden>
+      <div class="page-heading companion-note companion-frame import-companion-note" data-companion-frame data-companion-slot="import-corner"><div class="companion-note-copy"><p class="eyebrow">给任务补充资料</p><h1>导入资料</h1><p class="muted">先预检，再确认保存。导入不会自动取消资料限制。</p></div><img data-companion="side" data-companion-offset="1" alt="" aria-hidden="true" draggable="false" hidden></div>
+      <div class="import-workspace"><div class="import-form">
+        <div class="grid2"><label>导入目标库<select id="import-library"></select></label><label>导入名称<input id="import-name" value="粘贴资料"></label></div>
+        <label class="file-upload">选择 TXT、Markdown 或 JSON 文件<input id="import-file" type="file" accept=".txt,.md,.json"></label>
+        <label>或粘贴文本 / JSON<textarea id="import-text" rows="8" placeholder="把文档或资料粘贴在这里"></textarea></label>
+        <label>资料使用范围<select id="import-sensitivity"><option value="normal">普通资料</option><option value="local_only">仅限本地</option></select></label>
+        <details><summary>JSON 行字段映射</summary><div class="grid3"><label>标题字段<input id="map-title" value="title"></label><label>正文字段<input id="map-content" value="content"></label><label>业务对象字段<input id="map-fields" value="fields"></label></div></details>
+        <div class="actions"><button id="preview-import">预检导入</button><button id="commit-import" class="primary" disabled>确认导入</button><button id="view-imported-entries" type="button" hidden>查看刚导入的资料</button></div>
+      </div><div class="import-readback"><h2>预检结果</h2><p class="hint">确认导入前，核对数量、来源和分类。</p><pre id="import-preview">尚未预检</pre></div></div>
+      <details id="backup-tools" class="advanced-panel"><summary>本地备份与恢复</summary><p class="hint">完整备份包含历史和仅限本地条目，请作为本地文件保管。恢复时通过上方选择 JSON 文件，仍需预检与确认。</p><button id="export-backup">导出本地完整备份</button></details>
+      <details class="advanced-panel"><summary>近期操作</summary><div id="audit-events"></div></details>
+    </section>
+  </main>
+</div>
+</div>
+<script type="module" src="ui.js"></script>
+<script type="module" src="soft-body/boot.js"></script>
+</body></html>
+

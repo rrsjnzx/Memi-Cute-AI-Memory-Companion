@@ -1,0 +1,13 @@
+{
+  "name": "text-memory-engine",
+  "version": "0.12.2",
+  "private": true,
+  "type": "module",
+  "description": "Local external-memory Chromium extension with an independent localhost acceptance harness",
+  "scripts": {
+    "prepare:test": "python tests/standalone/prepare-copy.py extension",
+    "test": "npm --prefix tests/standalone test",
+    "verify:test": "python tests/standalone/verify-package.py --source extension",
+    "test:scaffold": "npm --prefix tests/standalone run test:scaffold"
+  }
+}

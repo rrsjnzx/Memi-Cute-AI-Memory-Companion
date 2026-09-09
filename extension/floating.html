@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN" class="floating-page">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Text Memory 聊天</title><link rel="stylesheet" href="floating.css"><link rel="stylesheet" href="site-theme.css"></head>
+<body class="floating-workspace">
+<div class="floating-presence companion-frame" data-companion-frame data-companion-surface="floating"><div><span class="floating-site-label"><span class="site-mark" data-site-mark aria-hidden="true">TM</span><strong data-site-name>正在连接 AI</strong></span><span class="floating-site-note">任务重点随每轮对话同行</span><button type="button" class="companion-cycle" data-cycle-companions>换形象</button></div><img data-companion="top" class="floating-companion" alt="" aria-hidden="true" draggable="false" hidden></div>
+<div class="floating-window">
+<header id="floating-header" title="拖动顶栏可移动窗口"><span id="drag-handle" tabindex="0" title="拖动聊天窗口；聚焦后也可用方向键移动" aria-label="拖动聊天窗口；方向键移动">⠿ <strong>Text Memory</strong> <small class="version">0.12.2</small></span><div class="header-actions"><button id="task-context-toggle" type="button" aria-controls="task-context" aria-expanded="false">目标与记忆</button><button id="settings-toggle" type="button" aria-label="高级设置" aria-controls="settings" aria-expanded="false">设置</button><button id="collapse" type="button" aria-label="收起窗口">收起</button><button id="close" type="button" aria-label="关闭窗口">×</button></div></header>
+<p id="status" role="status" aria-live="polite">正在连接当前 AI…</p>
+<main id="content" hidden>
+  <div class="task-controls"><div class="task-row"><label for="task-select">任务</label><select id="task-select"><option value="">选择任务</option></select><button id="refresh-tasks" type="button" title="刷新本地任务">↻</button><button id="open-handoff" type="button" title="打开管理页，准备跨 AI 任务包">跨 AI 接力</button><span id="memory-mode">保存前核对</span></div>
+  <div class="memory-preferences"><label class="check" title="关闭时先核对再保存；新事实仍保留为待审核候选"><input id="automatic-memory" type="checkbox" aria-describedby="memory-preference-hint">自动保存任务进度</label><span id="memory-preference-hint" class="sr-only">关闭时先核对再保存</span></div></div>
+  <section id="prepared-extraction" class="extraction-banner" hidden aria-label="文档提炼" title="原文随资料包交付；普通聊天输入会保留。"><div class="extraction-copy"><strong>文档提炼</strong><p id="extraction-summary"></p></div><div class="actions"><button id="send-extraction" type="button" class="primary">发送提炼片段</button><button id="next-extraction" type="button" class="primary" hidden>提炼下一片</button></div></section>
+  <section id="extraction-queue" aria-label="连续提炼队列" hidden><div class="queue-bar"><span id="queue-summary"></span><button id="queue-pause" type="button" hidden>暂停</button><button id="queue-continue" type="button" hidden>继续本批</button></div><details id="queue-options"><summary>连续提炼设置</summary><div id="queue-config"><p id="queue-source"></p><label>本批片数 <input id="queue-count" type="number" min="1" max="10" value="3"></label><button id="queue-start" type="button" class="primary">开始这批提炼</button></div><p class="hint">每片自动保存无异常回执为待审核候选；疑点会暂停。最多 10 片，刷新或关闭后需点击继续。暂停不撤回已开始的发送。</p><button id="queue-cancel" type="button" hidden>取消本批，保留已处理资料</button></details></section>
+  <section id="task-context" aria-label="目标与核心记忆" hidden>
+    <div class="task-context-heading"><div><h2>目标与记忆</h2><p id="task-context-meta"></p></div><button id="task-context-close" type="button" aria-label="收起目标与记忆">收起</button></div>
+    <p id="task-context-empty" class="hint">先在上方选择一个已保存任务。</p>
+    <div id="task-context-content" hidden>
+      <dl class="task-context-fields"><div><dt>任务目标</dt><dd id="task-context-goal"></dd></div><div><dt>长期约束</dt><dd id="task-context-constraints"></dd></div><div><dt>已保存进度</dt><dd id="task-context-progress"></dd></div><div><dt>未解决事项</dt><dd id="task-context-questions"></dd></div></dl>
+      <h3 id="task-context-core-heading">核心记忆</h3><div id="task-context-cores"></div>
+      <p class="hint">这里显示已保存的任务档案，查看不会修改内容或解除条目限制。</p>
+      <div class="task-context-footer"><button id="task-context-manager" type="button">管理此任务</button><p id="task-context-manager-hint" class="hint"></p></div>
+    </div>
+  </section>
+  <div class="reply-companion-wrap"><div id="chat-origin" class="chat-origin companion-note companion-frame" data-companion-frame data-companion-slot="reply-corner"><div class="companion-note-copy"><strong id="chat-history-heading">当前任务的本地聊天记录（可跨 AI 保留）</strong><p id="chat-destination" data-state="unconnected" role="status">尚未连接已核验的 AI 网页</p><details class="chat-origin-explanation"><summary>记录说明</summary><p class="chat-origin-note">按任务保留；切换网站或网页会话不会清空，也不代表当前网页已有这些回复。</p></details></div><img data-companion="side" data-companion-offset="1" alt="" aria-hidden="true" draggable="false" hidden></div></div>
+  <section id="transcript" aria-labelledby="chat-history-heading"><div id="history"></div><p id="answer-label" class="chat-label" hidden>本地记录中的最近回答</p><div id="answer" class="chat-row assistant" aria-live="polite" hidden></div><div id="empty-chat"><div class="companion-shelf welcome-companion-shelf companion-frame" data-companion-frame data-companion-only data-companion-slot="welcome-shelf" hidden aria-hidden="true"><img data-companion="top" data-companion-offset="1" alt="" draggable="false" hidden></div><strong>继续你的任务</strong><p>在下面输入问题。任务重点会一起交给当前 AI，收到回复后可先核对再保存任务记忆。</p></div></section>
+  <section id="review-card" aria-label="核对任务记忆" hidden>
+    <h2 id="review-heading">核对任务记忆</h2><p id="review-summary"></p>
+    <div class="actions"><button id="review-confirm" type="button" class="primary">保存这次更新</button><button id="review-skip" type="button">保留原记忆，继续聊天</button></div>
+    <div id="review-notices"></div><details id="review-details"><summary>查看进度变化</summary><div id="review-fields"></div></details>
+    <div id="review-evidence"></div>
+    <p class="hint">新事实仍待审核；格式检查不判断语义。</p>
+  </section>
+  <aside id="exception" hidden><strong id="exception-title">需要处理</strong><p id="exception-message"></p><div class="actions"><button id="handoff" type="button" hidden>在当前 AI 继续</button><button id="read" type="button">检查最新回复</button><button id="exception-details" type="button">查看处理方式</button></div></aside>
+  <section id="settings" hidden>
+    <div class="settings-heading"><strong>高级设置</strong><button type="button" class="quiet companion-toggle" data-toggle-companions aria-pressed="true">隐藏形象</button><button id="manager" type="button">打开完整管理页</button></div>
+    <label class="companion-size-control">人物大小<select data-companion-size aria-label="浮窗人物大小"><option value="standard">标准</option><option value="large">大</option></select></label>
+    <label class="check"><input id="auto-read" type="checkbox">持续检查当前回复</label><p id="task-summary" class="hint"></p>
+    <details id="diagnostics"><summary>高级诊断与记忆记录</summary>
+      <p id="round-status" class="hint"></p><p id="reply-state" class="hint">尚未接收</p>
+      <div id="memory-actions" hidden><p id="memory-summary"></p><button id="confirm-update" type="button" class="primary" disabled>确认记忆更新</button><button id="supplement" type="button" class="primary" hidden>处理补充资料请求</button><button id="recheck-reply" type="button">重新校验这份回复</button><button id="archive-reply" type="button">保留记录，清空接收区</button></div>
+      <details id="protocol-details"><summary>原始记忆区段与预览</summary><pre id="memory-preview"></pre><textarea id="protocol" readonly rows="5" aria-label="记忆区段原文"></textarea></details>
+      <details id="recovery"><summary>接收记录与恢复</summary><p id="recovery-status" class="hint"></p><select id="recovery-select" aria-label="本地接收记录"></select><div class="actions"><button id="refresh-recovery" type="button">刷新记录</button><button id="restore-reply" type="button">恢复所选回复</button></div><textarea id="recovery-text" readonly rows="4" aria-label="历史接收原文"></textarea></details>
+      <details><summary>资料范围与草稿工具</summary><div class="settings-grid"><label>字符预算<input id="budget" type="number" min="128" max="100000" value="12000"></label><label>适用日期<input id="as-of" type="date"></label><label>适用范围<input id="scope" type="text" maxlength="1000"></label></div><label class="check"><input id="disputed" type="checkbox">允许同时携带争议双方</label><div class="actions"><button id="prepare" type="button">仅填入网页草稿</button><button id="undo" type="button">撤销上次填入</button></div><p class="hint">发送前会保留并核对网页已有草稿；已被编辑的草稿不会自动覆盖。</p><p id="pack-summary" class="hint"></p><textarea id="pack-preview" readonly rows="5" aria-label="资料包预览"></textarea></details>
+      <button id="clear-chat-history" type="button">清理本地显示历史</button><p class="hint">只整理此处显示的聊天记录，保留任务记忆、未发送输入和发送状态。显示历史最多保留 80 条；记忆区段原文另存本地接收记录。</p>
+    </details>
+  </section>
+  <form id="composer"><label class="sr-only" for="question">发送给 AI 的问题</label><textarea id="question" rows="2" maxlength="4000" placeholder="输入问题，继续当前任务…"></textarea><div class="composer-footer"><span id="composer-hint">Enter 换行 · Ctrl + Enter 发送</span><div class="actions"><button id="start-new-question" type="button" hidden>停止等待</button><button id="send" type="submit" class="primary">发送</button></div></div></form>
+</main>
+</div>
+<span id="resize-handle" tabindex="0" role="button" aria-label="调整窗口大小" title="拖动调整窗口大小">◢</span>
+<script type="module" src="floating.js"></script>
+</body></html>

@@ -1,0 +1,8 @@
+/* The entire SVG, including its invisible hit outline, floats together.
+   svgPointerPoint uses getScreenCTM so capture follows the displayed position.
+   Pause at the current offset while pressed or rebounding; never jump on grab. */
+.soft-body-stage>.soft-kaomoji,.main-stage>.soft-kaomoji{animation:kaomoji-drift 7.6s ease-in-out infinite;transform-origin:50% 58%;will-change:transform}
+@keyframes kaomoji-drift{0%,100%{transform:translate(0,0) rotate(-.35deg)}35%{transform:translate(1.5px,-5px) rotate(.35deg)}70%{transform:translate(-1px,-2px) rotate(-.1deg)}}
+.soft-body-stage[data-active="true"]>.soft-kaomoji,.main-stage[data-active="true"]>.soft-kaomoji,[data-soft-page-hidden="true"] .soft-kaomoji{animation-play-state:paused}
+[data-soft-reduced="true"] .soft-kaomoji,.reduced .soft-kaomoji{animation:none!important;transform:none!important;will-change:auto}
+@media(prefers-reduced-motion:reduce){.soft-kaomoji{animation:none!important;transform:none!important;will-change:auto}}

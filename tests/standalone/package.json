@@ -1,0 +1,13 @@
+{
+  "name": "text-memory-standalone-browser-test",
+  "version": "0.12.2",
+  "private": true,
+  "type": "module",
+  "description": "Independent localhost acceptance harness; generated product is not a loadable extension",
+  "scripts": {
+    "start": "python serve.py",
+    "test": "node --test --experimental-test-isolation=none web/*.test.mjs",
+    "test:scaffold": "node --test --experimental-test-isolation=none web/host.test.mjs web/mock-*.test.mjs web/extraction-fixture.test.mjs",
+    "verify": "python verify-package.py"
+  }
+}

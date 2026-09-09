@@ -1,0 +1,2559 @@
+{
+  "libraries": [
+    {
+      "id": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "name": "澄湾真实验收·独立重建复测（不连接原管理页）",
+      "createdAt": "2026-09-07T18:15:39.352Z"
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry_e2baf5eb-bee3-420c-b5ad-f9d851ded02b",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "本任务重点与事实边界",
+      "content": "任务是准备澄湾泵站夜间切换的当前有效执行要点，不是汇总档案室活动。保留人员代号、有效修订及未完成事项；没有实际读数就不能宣称现场已通过检查。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [],
+      "tags": [],
+      "sourceRefs": [],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "user_asserted",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.354Z",
+      "updatedAt": "2026-09-07T18:15:39.354Z",
+      "changeReason": "独立验收重建：逐字保留原始资料包核心",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_3937e5d2-d237-4f6d-bafc-6e780709dd66",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "修订和正式记忆的审核原则",
+      "content": "旧规定与新规定应保留各自版本上下文。模型提出的修订先存为待审核候选；只有明确审核并解决冲突后，才将新值作为正式当前记忆。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [],
+      "tags": [],
+      "sourceRefs": [],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "user_asserted",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "独立验收重建：逐字保留原始资料包核心",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "夜间切换演练执行窗口",
+      "content": "候选事实：本次澄湾泵站夜间切换演练的执行窗口为2026年11月16日21:00至22:30，时刻均为澄湾当地时间。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "执行窗口"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 103,
+          "end": 178,
+          "quote": "【运行记录：执行窗口】\n本次澄湾泵站夜间切换演练的执行窗口是 2026 年 11 月 16 日 21:00 至 22:30，所有时刻均为澄湾当地时间。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1@1",
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "现场切换负责人及同名人员权限区分",
+      "content": "候选事实：现场切换负责人为运行组林岚，人员代号OPS-17；资料室林岚代号ARC-04，仅负责整理档案，没有批准切换的权限。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "林岚 OPS-17",
+        "林岚 ARC-04"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 340,
+          "end": 416,
+          "quote": "【运行记录：同名人员区分】\n现场切换负责人是运行组林岚，人员代号 OPS-17；资料室林岚，人员代号 ARC-04，仅负责整理档案，没有批准切换的权限。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc@1",
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "本轮先行切换范围",
+      "content": "候选事实：本次切换只先在东港库房一号回路执行，西港库房和二号回路不在本轮先行范围内。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "先行区域"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 574,
+          "end": 624,
+          "quote": "【运行记录：先行区域】\n本次切换只先在东港库房一号回路执行，西港库房和二号回路均不在本轮先行范围内。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_bd5940b4-3a4c-404c-9537-9711994f2592",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "一号回路水位告警阈值",
+      "content": "候选事实：一号回路水位在任意连续10分钟内累计上升达到3厘米时，值守员必须停止切换并发出告警。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "告警阈值",
+        "停止切换条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 788,
+          "end": 846,
+          "quote": "【运行记录：告警阈值】\n一号回路水位在任意连续 10 分钟内累计上升达到 3 厘米时，值守员必须停止切换并发出告警。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_bd5940b4-3a4c-404c-9537-9711994f2592@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备件信息范围限制",
+      "content": "候选事实：本合卷未提供备用电池的品牌或单价，不能据此计算采购金额。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备件信息边界"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 1422,
+          "end": 1458,
+          "quote": "【证据边界】\n本合卷没有提供备用电池的品牌或单价，不能据此计算采购金额。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换前准入检查读数要求",
+      "content": "候选事实：切换前必须取得连续5次合格的水位读数，相邻两次读数间隔为2分钟；任意一次不合格则重新开始计数。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "准入检查",
+        "水位读数要求"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4103,
+          "end": 4167,
+          "quote": "【运行记录：准入检查】\n切换前必须取得连续 5 次合格的水位读数，相邻两次读数的间隔为 2 分钟；任意一次不合格就重新开始计数。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订一暂定数量",
+      "content": "候选事实：修订一暂定本次演练准备48节备用电池，该数值以最后签发的修订为准。该内容属于暂定修订值，不能据此确认最终值。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订",
+        "48节备用电池"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4326,
+          "end": 4375,
+          "quote": "【运行记录：备用电池修订】\n修订一暂定本次演练准备 48 节备用电池；此数值以最后签发的修订为准。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "archived",
+      "conflictState": "none",
+      "version": 3,
+      "previousVersionId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b@2",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的修订一 48 节归档状态，保留来源与历史",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_c4b49f92-4699-4017-8bd4-de636977f47e",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换失败后的冷却间隔",
+      "content": "候选事实：如果一次切换尝试失败，必须等待12分钟冷却后才能重试，且不能将档案中的拍照间隔作为冷却间隔。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "冷却间隔",
+        "失败重试条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4540,
+          "end": 4599,
+          "quote": "【运行记录：冷却间隔】\n如果一次切换尝试失败，必须等待 12 分钟冷却后才能重试，不得把档案中的拍照间隔当成冷却间隔。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_c4b49f92-4699-4017-8bd4-de636977f47e@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "现场记录允许采集字段限制",
+      "content": "候选事实：现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "允许采集字段",
+        "记录字段限制"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4752,
+          "end": 4812,
+          "quote": "【运行记录：允许采集字段】\n现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "准入检查实际读数缺失边界",
+      "content": "候选事实：记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "实际读数缺失",
+        "准入检查未确认"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 5397,
+          "end": 5440,
+          "quote": "【证据边界】\n记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订二正式值及历史关系",
+      "content": "候选事实：修订二正式将本次演练备用电池总数从48节改为64节，适用于2026年11月16日本次执行窗口；48节为修订一旧值，已不再适用。该候选需与旧版本上下文关联保存。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订二",
+        "64节备用电池",
+        "48节旧值"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8103,
+          "end": 8198,
+          "quote": "【运行记录：备用电池修订】\n修订二正式把本次演练的备用电池总数从 48 节改为 64 节，适用于 2026 年 11 月 16 日的本次执行窗口；早先的 48 节是修订一的旧值，已不再适用。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "替代签发人的条件与权限",
+      "content": "候选事实：仅在OPS-17林岚失联时，值班主管曹宁（OPS-08）可代签切换许可；ARC-04林岚仍无代签权。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "曹宁 OPS-08",
+        "OPS-17代签条件",
+        "ARC-04无代签权"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8362,
+          "end": 8430,
+          "quote": "【运行记录：替代签发人】\n只有在 OPS-17 林岚失联时，值班主管曹宁（OPS-08）才可代签切换许可；ARC-04 林岚仍无代签权。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_34969b54-8832-48e4-a70e-469c669d3614",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "回退截止条件",
+      "content": "候选事实：若到22:10仍未通过准入检查，必须终止本次切换并恢复R3配置，不得因接近22:30窗口结束时间而继续试切。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "回退截止",
+        "终止切换条件",
+        "R3配置恢复"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8583,
+          "end": 8657,
+          "quote": "【运行记录：回退截止】\n若到 22:10 仍未通过准入检查，必须终止本次切换并恢复 R3 配置，不得为了赶上 22:30 的窗口结束时间而继续试切。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_34969b54-8832-48e4-a70e-469c669d3614@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换成功后的观察与完成登记条件",
+      "content": "候选事实：切换成功后仍须连续观察20分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "成功后观察",
+        "完成登记条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8814,
+          "end": 8873,
+          "quote": "【运行记录：成功后的观察】\n切换成功后仍须连续观察 20 分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    },
+    {
+      "id": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "异常清单收尾待办",
+      "content": "候选事实：演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "异常清单",
+        "收尾待办"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 9043,
+          "end": 9111,
+          "quote": "【运行记录：未完成任务】\n演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "conflictIds": []
+    }
+  ],
+  "versions": [
+    {
+      "id": "entry_e2baf5eb-bee3-420c-b5ad-f9d851ded02b@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "本任务重点与事实边界",
+      "content": "任务是准备澄湾泵站夜间切换的当前有效执行要点，不是汇总档案室活动。保留人员代号、有效修订及未完成事项；没有实际读数就不能宣称现场已通过检查。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [],
+      "tags": [],
+      "sourceRefs": [],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "user_asserted",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.354Z",
+      "updatedAt": "2026-09-07T18:15:39.354Z",
+      "changeReason": "独立验收重建：逐字保留原始资料包核心",
+      "entryId": "entry_e2baf5eb-bee3-420c-b5ad-f9d851ded02b"
+    },
+    {
+      "id": "entry_3937e5d2-d237-4f6d-bafc-6e780709dd66@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "修订和正式记忆的审核原则",
+      "content": "旧规定与新规定应保留各自版本上下文。模型提出的修订先存为待审核候选；只有明确审核并解决冲突后，才将新值作为正式当前记忆。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [],
+      "tags": [],
+      "sourceRefs": [],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "user_asserted",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "独立验收重建：逐字保留原始资料包核心",
+      "entryId": "entry_3937e5d2-d237-4f6d-bafc-6e780709dd66"
+    },
+    {
+      "id": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "夜间切换演练执行窗口",
+      "content": "候选事实：本次澄湾泵站夜间切换演练的执行窗口为2026年11月16日21:00至22:30，时刻均为澄湾当地时间。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "执行窗口"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 103,
+          "end": 178,
+          "quote": "【运行记录：执行窗口】\n本次澄湾泵站夜间切换演练的执行窗口是 2026 年 11 月 16 日 21:00 至 22:30，所有时刻均为澄湾当地时间。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1"
+    },
+    {
+      "id": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "夜间切换演练执行窗口",
+      "content": "候选事实：本次澄湾泵站夜间切换演练的执行窗口为2026年11月16日21:00至22:30，时刻均为澄湾当地时间。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "执行窗口"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 103,
+          "end": 178,
+          "quote": "【运行记录：执行窗口】\n本次澄湾泵站夜间切换演练的执行窗口是 2026 年 11 月 16 日 21:00 至 22:30，所有时刻均为澄湾当地时间。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1@1",
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1"
+    },
+    {
+      "id": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "现场切换负责人及同名人员权限区分",
+      "content": "候选事实：现场切换负责人为运行组林岚，人员代号OPS-17；资料室林岚代号ARC-04，仅负责整理档案，没有批准切换的权限。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "林岚 OPS-17",
+        "林岚 ARC-04"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 340,
+          "end": 416,
+          "quote": "【运行记录：同名人员区分】\n现场切换负责人是运行组林岚，人员代号 OPS-17；资料室林岚，人员代号 ARC-04，仅负责整理档案，没有批准切换的权限。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc"
+    },
+    {
+      "id": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "现场切换负责人及同名人员权限区分",
+      "content": "候选事实：现场切换负责人为运行组林岚，人员代号OPS-17；资料室林岚代号ARC-04，仅负责整理档案，没有批准切换的权限。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "林岚 OPS-17",
+        "林岚 ARC-04"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 340,
+          "end": 416,
+          "quote": "【运行记录：同名人员区分】\n现场切换负责人是运行组林岚，人员代号 OPS-17；资料室林岚，人员代号 ARC-04，仅负责整理档案，没有批准切换的权限。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc@1",
+      "createdAt": "2026-09-07T18:15:39.355Z",
+      "updatedAt": "2026-09-07T18:15:39.355Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc"
+    },
+    {
+      "id": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "本轮先行切换范围",
+      "content": "候选事实：本次切换只先在东港库房一号回路执行，西港库房和二号回路不在本轮先行范围内。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "先行区域"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 574,
+          "end": 624,
+          "quote": "【运行记录：先行区域】\n本次切换只先在东港库房一号回路执行，西港库房和二号回路均不在本轮先行范围内。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14"
+    },
+    {
+      "id": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "本轮先行切换范围",
+      "content": "候选事实：本次切换只先在东港库房一号回路执行，西港库房和二号回路不在本轮先行范围内。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "先行区域"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 574,
+          "end": 624,
+          "quote": "【运行记录：先行区域】\n本次切换只先在东港库房一号回路执行，西港库房和二号回路均不在本轮先行范围内。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14"
+    },
+    {
+      "id": "entry_bd5940b4-3a4c-404c-9537-9711994f2592@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "一号回路水位告警阈值",
+      "content": "候选事实：一号回路水位在任意连续10分钟内累计上升达到3厘米时，值守员必须停止切换并发出告警。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "告警阈值",
+        "停止切换条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 788,
+          "end": 846,
+          "quote": "【运行记录：告警阈值】\n一号回路水位在任意连续 10 分钟内累计上升达到 3 厘米时，值守员必须停止切换并发出告警。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_bd5940b4-3a4c-404c-9537-9711994f2592"
+    },
+    {
+      "id": "entry_bd5940b4-3a4c-404c-9537-9711994f2592@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "一号回路水位告警阈值",
+      "content": "候选事实：一号回路水位在任意连续10分钟内累计上升达到3厘米时，值守员必须停止切换并发出告警。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "告警阈值",
+        "停止切换条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 788,
+          "end": 846,
+          "quote": "【运行记录：告警阈值】\n一号回路水位在任意连续 10 分钟内累计上升达到 3 厘米时，值守员必须停止切换并发出告警。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_bd5940b4-3a4c-404c-9537-9711994f2592@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_bd5940b4-3a4c-404c-9537-9711994f2592"
+    },
+    {
+      "id": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备件信息范围限制",
+      "content": "候选事实：本合卷未提供备用电池的品牌或单价，不能据此计算采购金额。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备件信息边界"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 1422,
+          "end": 1458,
+          "quote": "【证据边界】\n本合卷没有提供备用电池的品牌或单价，不能据此计算采购金额。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24"
+    },
+    {
+      "id": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备件信息范围限制",
+      "content": "候选事实：本合卷未提供备用电池的品牌或单价，不能据此计算采购金额。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备件信息边界"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 1422,
+          "end": 1458,
+          "quote": "【证据边界】\n本合卷没有提供备用电池的品牌或单价，不能据此计算采购金额。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24"
+    },
+    {
+      "id": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换前准入检查读数要求",
+      "content": "候选事实：切换前必须取得连续5次合格的水位读数，相邻两次读数间隔为2分钟；任意一次不合格则重新开始计数。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "准入检查",
+        "水位读数要求"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4103,
+          "end": 4167,
+          "quote": "【运行记录：准入检查】\n切换前必须取得连续 5 次合格的水位读数，相邻两次读数的间隔为 2 分钟；任意一次不合格就重新开始计数。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde"
+    },
+    {
+      "id": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换前准入检查读数要求",
+      "content": "候选事实：切换前必须取得连续5次合格的水位读数，相邻两次读数间隔为2分钟；任意一次不合格则重新开始计数。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "准入检查",
+        "水位读数要求"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4103,
+          "end": 4167,
+          "quote": "【运行记录：准入检查】\n切换前必须取得连续 5 次合格的水位读数，相邻两次读数的间隔为 2 分钟；任意一次不合格就重新开始计数。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde"
+    },
+    {
+      "id": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订一暂定数量",
+      "content": "候选事实：修订一暂定本次演练准备48节备用电池，该数值以最后签发的修订为准。该内容属于暂定修订值，不能据此确认最终值。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订",
+        "48节备用电池"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4326,
+          "end": 4375,
+          "quote": "【运行记录：备用电池修订】\n修订一暂定本次演练准备 48 节备用电池；此数值以最后签发的修订为准。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b"
+    },
+    {
+      "id": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订一暂定数量",
+      "content": "候选事实：修订一暂定本次演练准备48节备用电池，该数值以最后签发的修订为准。该内容属于暂定修订值，不能据此确认最终值。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订",
+        "48节备用电池"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4326,
+          "end": 4375,
+          "quote": "【运行记录：备用电池修订】\n修订一暂定本次演练准备 48 节备用电池；此数值以最后签发的修订为准。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b"
+    },
+    {
+      "id": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b@3",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订一暂定数量",
+      "content": "候选事实：修订一暂定本次演练准备48节备用电池，该数值以最后签发的修订为准。该内容属于暂定修订值，不能据此确认最终值。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订",
+        "48节备用电池"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4326,
+          "end": 4375,
+          "quote": "【运行记录：备用电池修订】\n修订一暂定本次演练准备 48 节备用电池；此数值以最后签发的修订为准。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "archived",
+      "conflictState": "none",
+      "version": 3,
+      "previousVersionId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b@2",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的修订一 48 节归档状态，保留来源与历史",
+      "conflictIds": [],
+      "entryId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b"
+    },
+    {
+      "id": "entry_c4b49f92-4699-4017-8bd4-de636977f47e@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换失败后的冷却间隔",
+      "content": "候选事实：如果一次切换尝试失败，必须等待12分钟冷却后才能重试，且不能将档案中的拍照间隔作为冷却间隔。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "冷却间隔",
+        "失败重试条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4540,
+          "end": 4599,
+          "quote": "【运行记录：冷却间隔】\n如果一次切换尝试失败，必须等待 12 分钟冷却后才能重试，不得把档案中的拍照间隔当成冷却间隔。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_c4b49f92-4699-4017-8bd4-de636977f47e"
+    },
+    {
+      "id": "entry_c4b49f92-4699-4017-8bd4-de636977f47e@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换失败后的冷却间隔",
+      "content": "候选事实：如果一次切换尝试失败，必须等待12分钟冷却后才能重试，且不能将档案中的拍照间隔作为冷却间隔。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "冷却间隔",
+        "失败重试条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4540,
+          "end": 4599,
+          "quote": "【运行记录：冷却间隔】\n如果一次切换尝试失败，必须等待 12 分钟冷却后才能重试，不得把档案中的拍照间隔当成冷却间隔。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_c4b49f92-4699-4017-8bd4-de636977f47e@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_c4b49f92-4699-4017-8bd4-de636977f47e"
+    },
+    {
+      "id": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "现场记录允许采集字段限制",
+      "content": "候选事实：现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "允许采集字段",
+        "记录字段限制"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4752,
+          "end": 4812,
+          "quote": "【运行记录：允许采集字段】\n现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257"
+    },
+    {
+      "id": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "现场记录允许采集字段限制",
+      "content": "候选事实：现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "允许采集字段",
+        "记录字段限制"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 4752,
+          "end": 4812,
+          "quote": "【运行记录：允许采集字段】\n现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257"
+    },
+    {
+      "id": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "准入检查实际读数缺失边界",
+      "content": "候选事实：记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "实际读数缺失",
+        "准入检查未确认"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 5397,
+          "end": 5440,
+          "quote": "【证据边界】\n记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.356Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35"
+    },
+    {
+      "id": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "准入检查实际读数缺失边界",
+      "content": "候选事实：记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "实际读数缺失",
+        "准入检查未确认"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 5397,
+          "end": 5440,
+          "quote": "【证据边界】\n记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35@1",
+      "createdAt": "2026-09-07T18:15:39.356Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35"
+    },
+    {
+      "id": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订二正式值及历史关系",
+      "content": "候选事实：修订二正式将本次演练备用电池总数从48节改为64节，适用于2026年11月16日本次执行窗口；48节为修订一旧值，已不再适用。该候选需与旧版本上下文关联保存。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订二",
+        "64节备用电池",
+        "48节旧值"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8103,
+          "end": 8198,
+          "quote": "【运行记录：备用电池修订】\n修订二正式把本次演练的备用电池总数从 48 节改为 64 节，适用于 2026 年 11 月 16 日的本次执行窗口；早先的 48 节是修订一的旧值，已不再适用。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de"
+    },
+    {
+      "id": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "备用电池修订二正式值及历史关系",
+      "content": "候选事实：修订二正式将本次演练备用电池总数从48节改为64节，适用于2026年11月16日本次执行窗口；48节为修订一旧值，已不再适用。该候选需与旧版本上下文关联保存。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "备用电池修订二",
+        "64节备用电池",
+        "48节旧值"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8103,
+          "end": 8198,
+          "quote": "【运行记录：备用电池修订】\n修订二正式把本次演练的备用电池总数从 48 节改为 64 节，适用于 2026 年 11 月 16 日的本次执行窗口；早先的 48 节是修订一的旧值，已不再适用。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de"
+    },
+    {
+      "id": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "替代签发人的条件与权限",
+      "content": "候选事实：仅在OPS-17林岚失联时，值班主管曹宁（OPS-08）可代签切换许可；ARC-04林岚仍无代签权。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "曹宁 OPS-08",
+        "OPS-17代签条件",
+        "ARC-04无代签权"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8362,
+          "end": 8430,
+          "quote": "【运行记录：替代签发人】\n只有在 OPS-17 林岚失联时，值班主管曹宁（OPS-08）才可代签切换许可；ARC-04 林岚仍无代签权。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7"
+    },
+    {
+      "id": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "替代签发人的条件与权限",
+      "content": "候选事实：仅在OPS-17林岚失联时，值班主管曹宁（OPS-08）可代签切换许可；ARC-04林岚仍无代签权。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "曹宁 OPS-08",
+        "OPS-17代签条件",
+        "ARC-04无代签权"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8362,
+          "end": 8430,
+          "quote": "【运行记录：替代签发人】\n只有在 OPS-17 林岚失联时，值班主管曹宁（OPS-08）才可代签切换许可；ARC-04 林岚仍无代签权。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7"
+    },
+    {
+      "id": "entry_34969b54-8832-48e4-a70e-469c669d3614@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "回退截止条件",
+      "content": "候选事实：若到22:10仍未通过准入检查，必须终止本次切换并恢复R3配置，不得因接近22:30窗口结束时间而继续试切。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "回退截止",
+        "终止切换条件",
+        "R3配置恢复"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8583,
+          "end": 8657,
+          "quote": "【运行记录：回退截止】\n若到 22:10 仍未通过准入检查，必须终止本次切换并恢复 R3 配置，不得为了赶上 22:30 的窗口结束时间而继续试切。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_34969b54-8832-48e4-a70e-469c669d3614"
+    },
+    {
+      "id": "entry_34969b54-8832-48e4-a70e-469c669d3614@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "回退截止条件",
+      "content": "候选事实：若到22:10仍未通过准入检查，必须终止本次切换并恢复R3配置，不得因接近22:30窗口结束时间而继续试切。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "回退截止",
+        "终止切换条件",
+        "R3配置恢复"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8583,
+          "end": 8657,
+          "quote": "【运行记录：回退截止】\n若到 22:10 仍未通过准入检查，必须终止本次切换并恢复 R3 配置，不得为了赶上 22:30 的窗口结束时间而继续试切。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_34969b54-8832-48e4-a70e-469c669d3614@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_34969b54-8832-48e4-a70e-469c669d3614"
+    },
+    {
+      "id": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换成功后的观察与完成登记条件",
+      "content": "候选事实：切换成功后仍须连续观察20分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "成功后观察",
+        "完成登记条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8814,
+          "end": 8873,
+          "quote": "【运行记录：成功后的观察】\n切换成功后仍须连续观察 20 分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011"
+    },
+    {
+      "id": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "切换成功后的观察与完成登记条件",
+      "content": "候选事实：切换成功后仍须连续观察20分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "成功后观察",
+        "完成登记条件"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 8814,
+          "end": 8873,
+          "quote": "【运行记录：成功后的观察】\n切换成功后仍须连续观察 20 分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011"
+    },
+    {
+      "id": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "异常清单收尾待办",
+      "content": "候选事实：演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "异常清单",
+        "收尾待办"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 9043,
+          "end": 9111,
+          "quote": "【运行记录：未完成任务】\n演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "pending",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 1,
+      "previousVersionId": null,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "独立验收重建：从实际 AI 原始回执保存候选",
+      "entryId": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0"
+    },
+    {
+      "id": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0@2",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "kind": "fact",
+      "title": "异常清单收尾待办",
+      "content": "候选事实：演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。",
+      "fields": {},
+      "schemaId": "",
+      "schemaVersion": null,
+      "entityId": "",
+      "predicate": "",
+      "singleValued": false,
+      "aliases": [
+        "异常清单",
+        "收尾待办"
+      ],
+      "tags": [
+        "模型候选",
+        "原文提炼",
+        "提炼自评：supported"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+          "sourceVersion": 1,
+          "start": 9043,
+          "end": 9111,
+          "quote": "【运行记录：未完成任务】\n演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。"
+        }
+      ],
+      "scope": "",
+      "effectiveFrom": "",
+      "effectiveTo": "",
+      "sensitivity": "normal",
+      "evidenceKind": "inferred",
+      "enabledForContext": true,
+      "reviewStatus": "confirmed",
+      "lifecycleStatus": "active",
+      "conflictState": "none",
+      "version": 2,
+      "previousVersionId": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0@1",
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "changeReason": "重建操作者已报告的明确审核状态；不改原数据库",
+      "entryId": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_5233f6fa-fe1e-4170-8b5c-d303627577c0",
+      "name": "澄湾泵站夜间切换演练：三次记录合卷（原创验收语料）",
+      "text": "第1部分　修订一的执行范围与人员说明\n\n本材料全部为原创虚构验收文本，澄湾、相关人员与事件均不指向真实对象。各部分按签发先后合订。档案背景仅用于保留阅读环境，具体运行规定以明确的业务句子及后续修订为准。\n\n【运行记录：执行窗口】\n本次澄湾泵站夜间切换演练的执行窗口是 2026 年 11 月 16 日 21:00 至 22:30，所有时刻均为澄湾当地时间。\n\n【非运行档案背景·1-1：书架标签】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n【运行记录：同名人员区分】\n现场切换负责人是运行组林岚，人员代号 OPS-17；资料室林岚，人员代号 ARC-04，仅负责整理档案，没有批准切换的权限。\n\n【非运行档案背景·1-2：装订留白】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n【运行记录：先行区域】\n本次切换只先在东港库房一号回路执行，西港库房和二号回路均不在本轮先行范围内。\n\n【非运行档案背景·1-3：档案页眉】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n【运行记录：告警阈值】\n一号回路水位在任意连续 10 分钟内累计上升达到 3 厘米时，值守员必须停止切换并发出告警。\n\n【非运行档案背景·1-4：参观插图】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n【背景附记】\n档案室的绿色封套每包有 36 个，这是装订用品数量，不是本次演练的设备备件数量。\n\n【非运行档案背景·1-5：展览说明】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n【背景附记】\n旧展览海报曾安排 18:30 开门，这属于已经结束的文化活动，与本次切换窗口无关。\n\n【非运行档案背景·1-6：旧照片边缘】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n【证据边界】\n本合卷没有提供备用电池的品牌或单价，不能据此计算采购金额。\n\n【非运行档案背景·1-7：阅读角布置】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n\n【非运行档案背景·1-8：纸盒折痕】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·1-9：材料索引】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n\n【非运行档案背景·1-10：页脚标记】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n\n【非运行档案背景·1-11：扫描裁切】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n\n【非运行档案背景·1-12：书脊排列】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n\n【非运行档案背景·1-13：图册题签】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n\n【非运行档案背景·1-14：校对笔迹】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·1-15：空白表格】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n\n【非运行档案背景·1-16：封套与目录】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n\n【非运行档案背景·1-17：版面校样】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n\n【非运行档案背景·1-18：纸张纹理】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n\n【非运行档案背景·1-19：展板边框】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n\n【非运行档案背景·1-20：书签整理】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·1-21：书架标签】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n编辑旁注：本段继续说明纸面整理习惯，未增加运行规则或现场读数。附件留白用于记录以后补充的档案说明，当前不能把未填写的空白当成已完成的任务。编辑旁注：本段继续说明纸面整\n\n第1部分结束。下一部分如明确修订旧规定，应保留旧规定的历史归属并依据新规定核对当前任务。\n第2部分　修订一的检查要求及暂定备件\n\n本材料全部为原创虚构验收文本，澄湾、相关人员与事件均不指向真实对象。各部分按签发先后合订。档案背景仅用于保留阅读环境，具体运行规定以明确的业务句子及后续修订为准。\n\n【运行记录：准入检查】\n切换前必须取得连续 5 次合格的水位读数，相邻两次读数的间隔为 2 分钟；任意一次不合格就重新开始计数。\n\n【非运行档案背景·2-1：旧照片边缘】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n【运行记录：备用电池修订】\n修订一暂定本次演练准备 48 节备用电池；此数值以最后签发的修订为准。\n\n【非运行档案背景·2-2：阅读角布置】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n【运行记录：冷却间隔】\n如果一次切换尝试失败，必须等待 12 分钟冷却后才能重试，不得把档案中的拍照间隔当成冷却间隔。\n\n【非运行档案背景·2-3：纸盒折痕】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n【运行记录：允许采集字段】\n现场记录只允许写入回路编号、时间、水位和设备状态，禁止写入工作人员的身份证号或私人电话号码。\n\n【非运行档案背景·2-4：材料索引】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n【背景附记】\n摄影留档说明里的两张照片相隔 7 分钟，只描述展板拍摄顺序，不是设备冷却要求。\n\n【非运行档案背景·2-5：页脚标记】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n【背景附记】\n资料室林岚（ARC-04）在阅读活动中担任主持人，这个活动职务不赋予任何现场切换权限。\n\n【非运行档案背景·2-6：扫描裁切】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n【证据边界】\n记录员尚未收到实际水位读数，本合卷中的要求不能证明现场已经通过准入检查。\n\n【非运行档案背景·2-7：书脊排列】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·2-8：图册题签】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n\n【非运行档案背景·2-9：校对笔迹】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n\n【非运行档案背景·2-10：空白表格】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n\n【非运行档案背景·2-11：封套与目录】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n\n【非运行档案背景·2-12：版面校样】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n\n【非运行档案背景·2-13：纸张纹理】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·2-14：展板边框】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n\n【非运行档案背景·2-15：书签整理】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n\n【非运行档案背景·2-16：书架标签】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n\n【非运行档案背景·2-17：装订留白】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n\n【非运行档案背景·2-18：档案页眉】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n\n【非运行档案背景·2-19：参观插图】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·2-20：展览说明】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n\n【非运行档案背景·2-21：旧照片边缘】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n编辑旁注：本段继续说明纸面整理习惯，未增加运行规则或现场读数。附件留白用于记录以后补充的档案说明，当前不能把未填写的空白当成已完成的任务。编辑旁注：本段继续说明纸面整理习惯，未增加运行规则或现场读数。附件留白用于记录以后\n\n第2部分结束。下一部分如明确修订旧规定，应保留旧规定的历史归属并依据新规定核对当前任务。\n第3部分　修订二的正式更正与收尾条件\n\n本材料全部为原创虚构验收文本，澄湾、相关人员与事件均不指向真实对象。各部分按签发先后合订。档案背景仅用于保留阅读环境，具体运行规定以明确的业务句子及后续修订为准。\n\n【运行记录：备用电池修订】\n修订二正式把本次演练的备用电池总数从 48 节改为 64 节，适用于 2026 年 11 月 16 日的本次执行窗口；早先的 48 节是修订一的旧值，已不再适用。\n\n【非运行档案背景·3-1：扫描裁切】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n【运行记录：替代签发人】\n只有在 OPS-17 林岚失联时，值班主管曹宁（OPS-08）才可代签切换许可；ARC-04 林岚仍无代签权。\n\n【非运行档案背景·3-2：书脊排列】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n【运行记录：回退截止】\n若到 22:10 仍未通过准入检查，必须终止本次切换并恢复 R3 配置，不得为了赶上 22:30 的窗口结束时间而继续试切。\n\n【非运行档案背景·3-3：图册题签】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n【运行记录：成功后的观察】\n切换成功后仍须连续观察 20 分钟，观察期结束且未触发水位告警，才可把本轮状态登记为完成。\n\n【非运行档案背景·3-4：校对笔迹】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n【运行记录：未完成任务】\n演练收尾后，运行组还必须补交一份异常清单；在清单完成前，任务进度只能记为现场结束、收尾待办，不能记为全部完成。\n\n【非运行档案背景·3-5：空白表格】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n【背景附记】\n设计样张中出现的 72 节是纸面排版占位数字，从未成为本次演练的备用电池需求。\n\n【非运行档案背景·3-6：封套与目录】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n【背景附记】\n公共参观路线会经过西港库房，这条路线不改变本次只在东港库房一号回路先行的范围。\n\n【非运行档案背景·3-7：版面校样】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n【证据边界】\n签发修订二时，异常清单尚未提交，后续提交时间也未确定。\n\n【非运行档案背景·3-8：纸张纹理】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n\n【非运行档案背景·3-9：展板边框】\n这一页的纸盒草图记录的是收纳方式。纸盒里的卡片顺序可以因借阅而改变，所以不能借它判断修订的先后。整理人员把正文和附件分开放置，借阅后再依目录复原；这只是资料保管流程。对于演练目标，真正需要带入任务的是明确的范围、权限、阈值、有效修订和仍未完成的事项，而不是收纳材料本身。\n\n【非运行档案背景·3-10：书签整理】\n这一段保存的是资料室的编辑说明。编辑把说明放在正文旁边，是为了让日后整理者理解合卷的装订方式。纸面上的排列先后只表示阅读顺序，不表示现场执行顺序。不同纸张的颜色来自库存差异；颜色之间没有风险等级、审批等级或设备状态的对应关系。翻阅者可以把这一段作为档案背景阅读，但不应从版式细节提炼新的运行约束。\n\n【非运行档案背景·3-11：书架标签】\n早年的档案习惯把图案、注释和正文放在同一张纸上，后来整理时才把它们分开。整理者保留原来注释的位置，是为了说明页面为何留下空白。空白处没有被省略的设备参数，也不代表某个步骤已经完成。扫描件边缘的铅笔线用于对齐页面，纸张上的小圆点用于辨认装订方向。这些痕迹既不是签字，也不是现场许可。\n\n【非运行档案背景·3-12：装订留白】\n资料室曾讨论如何让读者更容易找到标题。有人偏爱较宽的边距，有人希望段落更紧凑，最终把两种样式都保存在样张册中。样张只展示排版选择，没有宣告任何一份业务记录已经被批准。编辑提醒后来接手的人，不能因为一页看起来整齐就认定其内容更新；判断有效修订应当查看正文明确写出的修订关系。\n\n【非运行档案背景·3-13：档案页眉】\n合卷末端保留了一些没有采用的说明文字。这些文字描述读者如何翻页、如何放回封套，以及如何避免把旧照片折损。它们没有向值守人员分派工作。档案助理在整理时把类似说明归在一起，是为了减少重复编目，而不是为了合并现场职责。纸面上出现的人名若只参与资料整理，不能仅凭同名就与现场负责人视为同一人。\n\n【非运行档案背景·3-14：参观插图】\n图册里的插画描绘了一个没有具体日期的沿海街区。画面上的建筑只是为了填充留白，并没有标注本次演练地点。插画中的钟面是装饰，不能拿来覆盖正文的执行窗口。编辑有时会在画旁写一句简短感想，那是阅读活动留下的个人感受，不是业务进度报告，也不证明现场已开始或已结束任何操作。\n编辑旁注：本段继续说明纸面整理习惯，未增加运行规则或现场读数。附件留白用于记录以后补充的档案说明，当前不能把未填写的空白当成已完成的任务。编辑旁注：本段继续说明纸面整理习惯，未增加运行规则或现场读数。附件留白用于记录以后补充的档案\n\n第3部分结束。下一部分如明确修订旧规定，应保留旧规定的历史归属并依据新规定核对当前任务。\n",
+      "sha256": "95163b77c31e1920275ac518b716ee4cd9ae4598ad0b0be5dc51d8ec978683f8",
+      "sensitivity": "normal",
+      "url": "",
+      "kind": "text",
+      "version": 1,
+      "coordinates": "utf16",
+      "createdAt": "2026-09-07T18:15:39.354Z"
+    }
+  ],
+  "templates": [],
+  "rules": [],
+  "watches": [],
+  "packs": [],
+  "runs": [],
+  "events": [
+    {
+      "id": "event_08cd1c5a-544d-419f-a77e-73a3539ebff8",
+      "type": "library_created",
+      "objectId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.354Z"
+    },
+    {
+      "id": "event_fc00ca34-9cea-4d45-8d3c-8c4b388542ea",
+      "type": "entry_created",
+      "objectId": "entry_e2baf5eb-bee3-420c-b5ad-f9d851ded02b",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.355Z"
+    },
+    {
+      "id": "event_db364dc1-49b7-44e1-b4b2-4f0ed2c49c7e",
+      "type": "entry_created",
+      "objectId": "entry_3937e5d2-d237-4f6d-bafc-6e780709dd66",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.355Z"
+    },
+    {
+      "id": "event_2b63e807-a880-4892-9bef-40c3a726fffb",
+      "type": "entry_created",
+      "objectId": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.355Z"
+    },
+    {
+      "id": "event_90ae066c-361b-4df7-a920-8bf7b6b4e060",
+      "type": "entry_updated",
+      "objectId": "entry_194e38ba-c492-4fa0-96f7-06544feef0e1",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.355Z"
+    },
+    {
+      "id": "event_608aea77-4189-46d7-a6c5-9b9e2c1ed1c4",
+      "type": "entry_created",
+      "objectId": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.355Z"
+    },
+    {
+      "id": "event_4677cc06-239f-4105-87bb-68d5f32f283f",
+      "type": "entry_updated",
+      "objectId": "entry_9a111670-2fee-48c4-b398-2b22e77d77bc",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.355Z"
+    },
+    {
+      "id": "event_26d3c013-6cd1-4b12-8fdf-18f8811934be",
+      "type": "entry_created",
+      "objectId": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_7bf7ead7-9d00-473e-bb25-60b94d270b68",
+      "type": "entry_updated",
+      "objectId": "entry_88e335b5-7ae3-4946-9e4d-19eea90f7a14",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_ab5af7ba-36eb-4575-a41b-0236299e2b29",
+      "type": "entry_created",
+      "objectId": "entry_bd5940b4-3a4c-404c-9537-9711994f2592",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_5d7d3eb6-d510-466a-87e7-a2eb3ea6d036",
+      "type": "entry_updated",
+      "objectId": "entry_bd5940b4-3a4c-404c-9537-9711994f2592",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_d610aab8-3cc4-494f-8530-8702717b6aeb",
+      "type": "entry_created",
+      "objectId": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_bbb394d4-8f3e-484f-84ce-52af018e6b3f",
+      "type": "entry_updated",
+      "objectId": "entry_d18c942b-0e92-43fb-9028-1fd98afcac24",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_ede0156e-4378-406f-a34f-3b9d513c0171",
+      "type": "entry_created",
+      "objectId": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_7cdf183f-6546-485a-a96c-600e426a4d32",
+      "type": "entry_updated",
+      "objectId": "entry_2934d6ad-d723-4abc-b87d-d5702fb41cde",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_82d43d2f-79d3-4b43-a20c-c5cc1cd021e0",
+      "type": "entry_created",
+      "objectId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_7cff491a-c5ed-4b10-8b10-dd2d92275381",
+      "type": "entry_updated",
+      "objectId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_e20858a6-d37f-4fc4-9bc6-dd083a513629",
+      "type": "lifecycle_changed",
+      "objectId": "entry_7211dc5c-5c3a-46ae-9c4a-c2351495cb7b",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_90642149-fb2e-484f-8cc3-abb72b37bff3",
+      "type": "entry_created",
+      "objectId": "entry_c4b49f92-4699-4017-8bd4-de636977f47e",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_273c3e5f-3527-4421-bb8b-bd04d8f309c8",
+      "type": "entry_updated",
+      "objectId": "entry_c4b49f92-4699-4017-8bd4-de636977f47e",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_542edc24-323c-4274-9cd8-6b050e74b720",
+      "type": "entry_created",
+      "objectId": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_50c989e8-2e8d-4b19-9509-bb0718a46f2b",
+      "type": "entry_updated",
+      "objectId": "entry_23d9bebc-fa57-4c01-a872-2252ebeb8257",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.356Z"
+    },
+    {
+      "id": "event_2ba7dbb8-5cc8-49f8-a49f-accf0fe82b26",
+      "type": "entry_created",
+      "objectId": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_60c29fc3-6009-42c9-a223-c70dbda8d15b",
+      "type": "entry_updated",
+      "objectId": "entry_933b3acf-2495-4f9b-87ad-8622e751dd35",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_309392a5-49db-4b74-836c-baed5f6c77e2",
+      "type": "entry_created",
+      "objectId": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_843da076-f61a-444f-ba6a-4695525fbd13",
+      "type": "entry_updated",
+      "objectId": "entry_e2e21ce7-aa22-4a1f-bc1d-14a8232c12de",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_65736e17-fc91-4e79-b2df-e1ddbfddfb4f",
+      "type": "entry_created",
+      "objectId": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_485614fe-f8fa-478e-a7d6-cdb820bde2a6",
+      "type": "entry_updated",
+      "objectId": "entry_dc082753-8e37-4f93-a6a7-c136c7a0e8d7",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_84015843-6866-4808-bcd9-ad7465e12d8e",
+      "type": "entry_created",
+      "objectId": "entry_34969b54-8832-48e4-a70e-469c669d3614",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_9369a59b-2651-41b6-b3f4-d481a18caa14",
+      "type": "entry_updated",
+      "objectId": "entry_34969b54-8832-48e4-a70e-469c669d3614",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_0f930bc3-bd62-44bd-b1ce-10f6d45619f8",
+      "type": "entry_created",
+      "objectId": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_c225eabe-1673-42ed-8156-378bf4385b1b",
+      "type": "entry_updated",
+      "objectId": "entry_ae99f7dd-f863-4be9-a72e-281b5c302011",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_846ac3a1-954d-4acb-9dc3-0657dc702436",
+      "type": "entry_created",
+      "objectId": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_62fc1125-9236-412e-a794-a1ba93796574",
+      "type": "entry_updated",
+      "objectId": "entry_3dccd676-a80c-4d9e-9ff8-1de97f65daf0",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    },
+    {
+      "id": "event_5526e252-f21b-4948-832c-682fb7e25d79",
+      "type": "task_created",
+      "objectId": "task_dda4561f-ecb7-4521-a295-eb9ed46ed958",
+      "result": "ok",
+      "at": "2026-09-07T18:15:39.357Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_dda4561f-ecb7-4521-a295-eb9ed46ed958",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "name": "澄湾演练当前执行要点",
+      "goal": "持续整理澄湾泵站本次夜间切换演练的当前有效执行要点：窗口、负责人和权限、范围、检查阈值、备件修订、停止与收尾条件。跨多次阅读保留任务重点，后来的修订要关联旧记录并保留历史。",
+      "constraints": "只根据已给出的原文提炼，不补造品牌、单价、实际水位或完成状态。排版、展览和资料收纳背景不进入重要记忆。区分同名人员的代号。后续修订先作为待审核候选，不能声称已自动覆盖正式记忆。",
+      "progress": "本轮从《澄湾泵站夜间切换演练：三次记录合卷（原创验收语料）》第8001—11000字符片段中继续提取与当前执行要点相关的候选信息。新增识别修订二后的备用电池数量及历史版本关系、替代签发权限、回退截止条件、成功后观察要求和收尾待办要求。未将背景附记、排版占位数字、资料整理内容作为运行事实。当前候选仍需审核。",
+      "openQuestions": "本轮明确了备用电池修订二将48节改为64节，但仍需保留修订历史，不能表示修订一从未存在。异常清单提交时间未确定，且未提供现场实际完成状态、准入检查结果或最终收尾确认。",
+      "coreEntryIds": [
+        "entry_e2baf5eb-bee3-420c-b5ad-f9d851ded02b",
+        "entry_3937e5d2-d237-4f6d-bafc-6e780709dd66"
+      ],
+      "version": 1,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z"
+    }
+  ],
+  "taskVersions": [
+    {
+      "id": "task_dda4561f-ecb7-4521-a295-eb9ed46ed958@1",
+      "libraryId": "lib_63c30d2f-1b84-4fd6-9ae3-4b8606c39ed5",
+      "name": "澄湾演练当前执行要点",
+      "goal": "持续整理澄湾泵站本次夜间切换演练的当前有效执行要点：窗口、负责人和权限、范围、检查阈值、备件修订、停止与收尾条件。跨多次阅读保留任务重点，后来的修订要关联旧记录并保留历史。",
+      "constraints": "只根据已给出的原文提炼，不补造品牌、单价、实际水位或完成状态。排版、展览和资料收纳背景不进入重要记忆。区分同名人员的代号。后续修订先作为待审核候选，不能声称已自动覆盖正式记忆。",
+      "progress": "本轮从《澄湾泵站夜间切换演练：三次记录合卷（原创验收语料）》第8001—11000字符片段中继续提取与当前执行要点相关的候选信息。新增识别修订二后的备用电池数量及历史版本关系、替代签发权限、回退截止条件、成功后观察要求和收尾待办要求。未将背景附记、排版占位数字、资料整理内容作为运行事实。当前候选仍需审核。",
+      "openQuestions": "本轮明确了备用电池修订二将48节改为64节，但仍需保留修订历史，不能表示修订一从未存在。异常清单提交时间未确定，且未提供现场实际完成状态、准入检查结果或最终收尾确认。",
+      "coreEntryIds": [
+        "entry_e2baf5eb-bee3-420c-b5ad-f9d851ded02b",
+        "entry_3937e5d2-d237-4f6d-bafc-6e780709dd66"
+      ],
+      "version": 1,
+      "createdAt": "2026-09-07T18:15:39.357Z",
+      "updatedAt": "2026-09-07T18:15:39.357Z",
+      "taskId": "task_dda4561f-ecb7-4521-a295-eb9ed46ed958"
+    }
+  ],
+  "rounds": [],
+  "extractionQueues": []
+}

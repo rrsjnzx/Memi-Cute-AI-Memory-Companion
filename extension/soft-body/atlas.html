@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Text Memory · 表情册</title><link rel="stylesheet" href="atlas.css"><link rel="stylesheet" href="motion.css"></head>
+<body>
+<header class="atlas-heading"><p class="eyebrow">TEXT MEMORY · EXPRESSION BOOK</p><h1>每一张脸，都能找得到。</h1><p>7 位角色 × 32 个原状态，共 224 条配置。表情随真实操作和本体互动出现；这里可以单独翻看。</p><p class="notice">这里的点选仅预览，不执行业务、不改变侧栏状态。224 条配置含 220 种不同颜文字，少量角色状态共用文字，神态与反应描述各自保留。</p></header>
+<main class="atlas-layout">
+<section class="collection" aria-label="全部表情">
+  <div class="filters"><label>角色<select id="atlas-persona"><option value="">全部角色 · 224</option></select></label><label>出现方式<select id="atlas-mode"><option value="">全部状态</option><option value="operation">真实操作反馈</option><option value="body">本体互动与空闲</option><option value="preview_only">暂仅保留预览</option></select></label><label class="search">搜索<input id="atlas-search" type="search" placeholder="表情名称、角色或字符"></label></div>
+  <p id="atlas-count" role="status" aria-live="polite"></p><div id="atlas-grid" class="atlas-grid"></div><p id="atlas-empty" hidden>没有符合条件的表情，试试清空搜索或切换角色。</p>
+</section>
+<aside class="detail" aria-label="所选表情预览"><span class="preview-label">独立预览 · 不产生操作结果</span><div id="atlas-face" class="atlas-face"></div><p id="atlas-persona-name" class="eyebrow"></p><h2 id="atlas-name"></h2><p id="atlas-rich" class="full-text"></p><p id="atlas-position"></p><div class="navigation"><button id="atlas-previous" type="button">上一张</button><button id="atlas-next" type="button">下一张</button></div><h3>什么时候出现</h3><p id="atlas-availability"></p><h3>原设计的反应</h3><p id="atlas-reaction"></p><details><summary>原始状态与来源</summary><p id="atlas-source"></p><p>V2.1 Markdown 原文逐条保留；没有收到原始 manifest 压缩包。此页的可见预览不代表真实业务或所有动画验收已完成。</p></details><a href="gallery.html" target="_blank" rel="noopener">打开详细动作检查页 ↗</a></aside>
+</main><script type="module" src="atlas.js"></script></body></html>

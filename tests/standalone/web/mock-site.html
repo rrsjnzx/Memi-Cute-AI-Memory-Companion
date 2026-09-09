@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>原创本地模拟 AI · Text Memory 验收</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f7fafc;color:#234352;font:14px/1.6 "Segoe UI","Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:24px 30px 160px}h1{font-size:24px;margin:0 0 6px}p{margin:6px 0 14px;color:#65818e}.mock-meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.chip{border:1px solid #c6dce4;border-radius:20px;padding:3px 12px;font-size:12px;background:#fff}.warn{color:#805d17;background:#fff8e8;border-color:#eddfb7}button,textarea{font:inherit}button{padding:8px 13px;border-radius:8px;border:1px solid #b8d2dc;background:#fff;color:#31576a;cursor:pointer}button:disabled{opacity:.5;cursor:wait}.empty{padding:45px 20px;border:1px dashed #bcd3dd;border-radius:12px;text-align:center;color:#78909c;margin:25px 0;background:#fff}.message{margin:24px 0}.label{font-size:12px;color:#72909e;margin-bottom:5px}.message article{border:1px solid #d4e3e9;border-radius:12px;background:#fff;padding:14px 18px}.message.user article{background:#eaf5f8}.message pre{font:13px/1.6 "Segoe UI","Microsoft YaHei",sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;max-height:260px;overflow:auto}.message.assistant pre{max-height:none}.composer{position:fixed;bottom:0;left:0;right:0;border-top:1px solid #d1e1e7;background:#fff;padding:14px max(24px,calc((100vw - 1040px)/2));display:flex;gap:12px;align-items:flex-end}.composer textarea{resize:vertical;min-height:70px;max-height:180px;flex:1;padding:12px;border:1px solid #b9d4df;border-radius:10px;color:#173e50}.composer button{background:#167f96;color:#fff;border-color:#167f96;min-width:95px}.manual-note{font-size:11px;line-height:1.4;color:#738f9c;max-width:115px;margin-bottom:7px}#mockStatus{min-height:22px;margin-top:12px;color:#286f83;font-size:13px}label{font-size:12px;color:#587782}input[type=checkbox]{vertical-align:middle}#resetPage{margin-left:auto}
+    .mock-meta select{font:inherit;max-width:100%;padding:5px;border:1px solid #b8d2dc;border-radius:6px;background:#fff;color:#31576a}
+  </style>
+  <script>globalThis.__WEB_TEST_LOCATION__=new URL('https://chatgpt.com/c/web-test-local');globalThis.chrome={runtime:{id:'text-memory-web-test'}};</script>
+  <script src="../product/adapters/mobile-textarea.js" defer></script>
+  <script src="../product/adapters/reply-reader.js" defer></script>
+  <script src="../product/adapters/send-control.js" defer></script>
+  <script src="../product/adapters/content.js" defer></script>
+  <script src="../product/adapters/floating-shell.js" defer></script>
+  <script src="../product/soft-body/feedback-bundle.js" defer></script>
+  <script src="../product/adapters/soft-feedback.js" defer></script>
+  <script src="./mock-search.js" defer></script>
+  <script src="./mock-extraction.js" defer></script>
+  <script src="./mock-site.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>本地模拟 AI 网页</h1>
+    <p>这是可控的原创网页夹具。发送、页面文本与流式状态是真实 DOM 操作；回答内容由固定脚本生成，不是模型输出。</p>
+    <div class="mock-meta"><span id="scenarioLabel" class="chip">场景：有效记忆更新</span><span id="sendCount" class="chip">实际发送点击 0 次</span><span class="chip warn">外部 AI 调用 0 次</span><label>输入框 <select id="editor-mode" aria-label="模拟输入框类型"><option value="desktop">桌面 textarea</option><option value="mobile">移动 textarea（浏览器编辑命令）</option></select></label><label><input id="includeFact" type="checkbox">更新含 1 条待审核测试候选</label><label><input id="repeatFact" type="checkbox">每次返回同一条候选（去重测试）</label><button id="resetPage">清空模拟网页消息</button></div>
+    <div id="mockStatus" role="status">尚未发送。请通过上方“打开原版对话浮窗”继续。</div>
+    <section id="transcript" aria-label="模拟网页原始对话"><div id="empty" class="empty">这里将保留实际插入并发送的完整资料包，以及用于读取器测试的原始回答。</div></section>
+  </main>
+  <form id="mockComposer" class="composer">
+    <textarea id="prompt-textarea" aria-label="本地模拟 AI 原始输入框" placeholder="原版扩展会将本轮资料包写入这里。也可手动输入测试文本。"></textarea>
+    <div><div class="manual-note">这是本地发送控件，不会连接真实 AI。</div><button data-testid="send-button" aria-label="Send prompt" type="submit">本地发送</button></div>
+  </form>
+</body>
+</html>

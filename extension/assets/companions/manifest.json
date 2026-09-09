@@ -1,0 +1,1609 @@
+{
+  "method": "Project-generated AI illustrations; locally crop project source images, preserve RGBA, trim alpha bounds and downscale to at most 560 px with Lanczos. Qwen uses reviewed fixed partitions with manual outline separation at touching neighbours. No runtime image generation, mirroring, or body deformation.",
+  "assets": [
+    {
+      "file": "chatgpt-top.png",
+      "source": "gpt/3b026d2f-b97c-4f56-aed7-781b15272909.png",
+      "sourceSha256": "b05dfce76b70e1d4ac51365b6ba06a71404df5a2b391bbda234073b008373775",
+      "rectangle": [
+        0,
+        815,
+        711,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        711,
+        553
+      ],
+      "size": [
+        560,
+        436
+      ],
+      "bytes": 396509,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 86410,
+      "opaquePixels": 140,
+      "sha256": "fb4657c5d2632796a00a68b8cb6b03d7a9c4a149d1a19b946dd546ff175fb0e9",
+      "removedNeighbourComponents": [
+        [
+          584,
+          0,
+          711,
+          40
+        ],
+        [
+          695,
+          245,
+          711,
+          282
+        ],
+        [
+          697,
+          291,
+          711,
+          314
+        ]
+      ],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        711,
+        553
+      ],
+      "croppedSizeBeforeResize": [
+        711,
+        553
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.935,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "chatgpt-side.png",
+      "source": "gpt/3b026d2f-b97c-4f56-aed7-781b15272909.png",
+      "sourceSha256": "b05dfce76b70e1d4ac51365b6ba06a71404df5a2b391bbda234073b008373775",
+      "rectangle": [
+        699,
+        887,
+        1150,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        433,
+        481
+      ],
+      "size": [
+        433,
+        481
+      ],
+      "bytes": 312947,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 82305,
+      "opaquePixels": 35,
+      "sha256": "778a3d61682e3b82074e4a4d878af0754e265907749a62a3bea917786aff65cf",
+      "removedNeighbourComponents": [
+        [
+          0,
+          311,
+          16,
+          437
+        ]
+      ],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        433,
+        481
+      ],
+      "croppedSizeBeforeResize": [
+        433,
+        481
+      ],
+      "anchor": {
+        "x": 0.667,
+        "y": 0.5,
+        "edge": "left"
+      }
+    },
+    {
+      "file": "deepseek-top.png",
+      "source": "deep seek/18e080a7-e368-4f19-a1a3-cbf03ba91b74.png",
+      "sourceSha256": "2b103606d420e8eb3a19727b552b683977b1b5c6ea6595136a7287b20740582f",
+      "rectangle": [
+        0,
+        927,
+        700,
+        1337
+      ],
+      "alphaTrim": [
+        23,
+        5,
+        700,
+        398
+      ],
+      "size": [
+        560,
+        325
+      ],
+      "bytes": 308407,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 49770,
+      "opaquePixels": 309,
+      "sha256": "bab9add3c781d60e8b067d1126a075b6a36c7abbcc039ac9fec814ed26c5e9c9",
+      "removedNeighbourComponents": [],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        677,
+        393
+      ],
+      "croppedSizeBeforeResize": [
+        677,
+        393
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.977,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "deepseek-side.png",
+      "source": "deep seek/18e080a7-e368-4f19-a1a3-cbf03ba91b74.png",
+      "sourceSha256": "2b103606d420e8eb3a19727b552b683977b1b5c6ea6595136a7287b20740582f",
+      "rectangle": [
+        788,
+        0,
+        1168,
+        832
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        358,
+        824
+      ],
+      "size": [
+        243,
+        560
+      ],
+      "bytes": 242006,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 42358,
+      "opaquePixels": 199,
+      "sha256": "0c914817a7289714c7a487199be1c5ab2524990bb4fa1500592bcb981fbd8d39",
+      "removedNeighbourComponents": [],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        358,
+        824
+      ],
+      "croppedSizeBeforeResize": [
+        358,
+        824
+      ],
+      "anchor": {
+        "x": 0.057,
+        "y": 0.5,
+        "edge": "right"
+      }
+    },
+    {
+      "file": "claude-top.png",
+      "source": "Claude/43ce0215-b726-4e64-be27-ea09e2aa0786.png",
+      "sourceSha256": "4110bb6b41f2ce39c85785aafa6a9694f1079ee84fae13986f73d93628a618af",
+      "rectangle": [
+        0,
+        826,
+        606,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        9,
+        602,
+        542
+      ],
+      "size": [
+        560,
+        496
+      ],
+      "bytes": 482175,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 74185,
+      "opaquePixels": 333,
+      "sha256": "cedd101a67ddd0811e0870b2267a15e9f87e3de1945dce5dda3c6d130617773c",
+      "removedNeighbourComponents": [],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        602,
+        533
+      ],
+      "croppedSizeBeforeResize": [
+        602,
+        533
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.961,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "claude-side.png",
+      "source": "Claude/25469f76-e7d9-4039-9dfc-79dd6bdec50e.png",
+      "sourceSha256": "5bb7f61ec738dfc2bb9857d92b2b9abfa54f943a436c6f1e7b106a6b650d5a1e",
+      "rectangle": [
+        623,
+        844,
+        1150,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        527,
+        524
+      ],
+      "size": [
+        527,
+        524
+      ],
+      "bytes": 511959,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 69112,
+      "opaquePixels": 54,
+      "sha256": "4275aa6638f0efdfd80401d5fc1e9745acf4550c28c548a9760f377940f78262",
+      "removedNeighbourComponents": [],
+      "separatedNeighbourSeeds": [
+        {
+          "point": [
+            3,
+            435
+          ],
+          "threshold": 8,
+          "margin": 2
+        }
+      ],
+      "finalAlphaTrim": [
+        0,
+        0,
+        527,
+        524
+      ],
+      "croppedSizeBeforeResize": [
+        527,
+        524
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.977,
+        "edge": "bottom"
+      }
+    },
+    {
+      "file": "kimi-top.png",
+      "source": "kimi/7115c00a-48ff-4820-811e-aab6ec8b3e90.png",
+      "sourceSha256": "a6da9364a0479acfd6b2921ae2c33ecc79db3fd67dc6e11f2deef14cd2bb7b48",
+      "rectangle": [
+        0,
+        892,
+        634,
+        1367
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        634,
+        451
+      ],
+      "size": [
+        560,
+        398
+      ],
+      "bytes": 374958,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 71099,
+      "opaquePixels": 134,
+      "sha256": "d77df711e9b720d9650a3fbca9a0c9c70df77e72692e75f08349eb7bdba1ff83",
+      "removedNeighbourComponents": [
+        [
+          615,
+          72,
+          634,
+          202
+        ],
+        [
+          191,
+          0,
+          292,
+          15
+        ]
+      ],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        634,
+        451
+      ],
+      "croppedSizeBeforeResize": [
+        634,
+        451
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.952,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "kimi-side.png",
+      "source": "kimi/7115c00a-48ff-4820-811e-aab6ec8b3e90.png",
+      "sourceSha256": "a6da9364a0479acfd6b2921ae2c33ecc79db3fd67dc6e11f2deef14cd2bb7b48",
+      "rectangle": [
+        624,
+        833,
+        1151,
+        1367
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        509,
+        519
+      ],
+      "size": [
+        509,
+        519
+      ],
+      "bytes": 437575,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 81620,
+      "opaquePixels": 73,
+      "sha256": "ec1a113febaacc4aaf67dd7fb561d35a40fbe4d48cb08dcbc64000fc49adf0a1",
+      "removedNeighbourComponents": [
+        [
+          0,
+          331,
+          23,
+          393
+        ],
+        [
+          86,
+          0,
+          132,
+          4
+        ],
+        [
+          0,
+          454,
+          8,
+          470
+        ],
+        [
+          64,
+          0,
+          73,
+          3
+        ]
+      ],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        509,
+        519
+      ],
+      "croppedSizeBeforeResize": [
+        509,
+        519
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.99,
+        "edge": "bottom"
+      }
+    },
+    {
+      "file": "grok-top.png",
+      "source": "grok/969ad0cf-b3e5-4577-9710-d9ad7244131a.png",
+      "sourceSha256": "345bbf75f86cce5d700fc0dd1c06ae556f2c7a2b22e9ef8f80507d69943a79f9",
+      "rectangle": [
+        592,
+        937,
+        1150,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        558,
+        397
+      ],
+      "size": [
+        558,
+        397
+      ],
+      "bytes": 408679,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 60454,
+      "opaquePixels": 153,
+      "sha256": "7fe1aaa435d4623b834eb1840f749a836e1a7d55a822155bb3fbcf4128af7751",
+      "removedNeighbourComponents": [],
+      "separatedNeighbourSeeds": [],
+      "finalAlphaTrim": [
+        0,
+        0,
+        558,
+        397
+      ],
+      "croppedSizeBeforeResize": [
+        558,
+        397
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.914,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "grok-side.png",
+      "source": "grok/969ad0cf-b3e5-4577-9710-d9ad7244131a.png",
+      "sourceSha256": "345bbf75f86cce5d700fc0dd1c06ae556f2c7a2b22e9ef8f80507d69943a79f9",
+      "rectangle": [
+        0,
+        0,
+        550,
+        825
+      ],
+      "alphaTrim": [
+        12,
+        1,
+        550,
+        825
+      ],
+      "size": [
+        366,
+        560
+      ],
+      "bytes": 409105,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 48158,
+      "opaquePixels": 417,
+      "sha256": "d020da5aa7edf8eabaa00e9519e809bd4adaeaaf12442148b572fc98e5a25012",
+      "removedNeighbourComponents": [
+        [
+          456,
+          687,
+          538,
+          824
+        ],
+        [
+          249,
+          819,
+          283,
+          824
+        ]
+      ],
+      "separatedNeighbourSeeds": [
+        {
+          "point": [
+            529,
+            589
+          ],
+          "threshold": 8,
+          "margin": 2
+        }
+      ],
+      "finalAlphaTrim": [
+        0,
+        0,
+        538,
+        824
+      ],
+      "croppedSizeBeforeResize": [
+        538,
+        824
+      ],
+      "anchor": {
+        "x": 0.097,
+        "y": 0.5,
+        "edge": "right"
+      }
+    },
+    {
+      "file": "chatgpt-top-rest.png",
+      "source": "gpt/5a54a5bc-3344-44f1-9e61-1c2112906c3b.png",
+      "sourceSha256": "ac7586c2e126300e15d998982ba82e7f782b9c750e273f2d716ada67490a4ca2",
+      "rectangle": [
+        0,
+        856,
+        721,
+        1295
+      ],
+      "alphaTrim": [
+        10,
+        1,
+        715,
+        439
+      ],
+      "size": [
+        560,
+        348
+      ],
+      "bytes": 311997,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 71631,
+      "opaquePixels": 167,
+      "sha256": "d7a08ce5b976cabb4eb85582b90ca09b804f15b83692fee4eb6f9e33bdf80fbe",
+      "componentSelection": {
+        "seed": [
+          300,
+          1110
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        705,
+        438
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.97,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "chatgpt-side-alt.png",
+      "source": "gpt/5a54a5bc-3344-44f1-9e61-1c2112906c3b.png",
+      "sourceSha256": "ac7586c2e126300e15d998982ba82e7f782b9c750e273f2d716ada67490a4ca2",
+      "rectangle": [
+        818,
+        836,
+        1214,
+        1295
+      ],
+      "alphaTrim": [
+        9,
+        1,
+        384,
+        451
+      ],
+      "size": [
+        375,
+        450
+      ],
+      "bytes": 296361,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 54878,
+      "opaquePixels": 40,
+      "sha256": "b74437aca56ba5e2cfdd60dc09b1356673851a25b3acf7790705707a3122857e",
+      "componentSelection": {
+        "seed": [
+          980,
+          1070
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        375,
+        450
+      ],
+      "anchor": {
+        "x": 0.014,
+        "y": 0.5,
+        "edge": "right"
+      }
+    },
+    {
+      "file": "deepseek-top-lean.png",
+      "source": "deep seek/c37a28a9-8dd2-47ee-a5b8-c52296b8b2e6.png",
+      "sourceSha256": "145ab76100e89de6500435e3a586e6cfc19f60d0cf084744933dce618ba6d333",
+      "rectangle": [
+        0,
+        45,
+        817,
+        799
+      ],
+      "alphaTrim": [
+        23,
+        16,
+        817,
+        747
+      ],
+      "size": [
+        560,
+        516
+      ],
+      "bytes": 381937,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 144970,
+      "opaquePixels": 421,
+      "sha256": "032c78ebe9316b45b5da442e9176c9041f9ac3643576d60d965b4dac13058a6c",
+      "componentSelection": {
+        "seed": [
+          420,
+          400
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        794,
+        731
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.69,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "deepseek-side-alt.png",
+      "source": "deep seek/c37a28a9-8dd2-47ee-a5b8-c52296b8b2e6.png",
+      "sourceSha256": "145ab76100e89de6500435e3a586e6cfc19f60d0cf084744933dce618ba6d333",
+      "rectangle": [
+        869,
+        689,
+        1364,
+        1153
+      ],
+      "alphaTrim": [
+        12,
+        1,
+        444,
+        464
+      ],
+      "size": [
+        432,
+        463
+      ],
+      "bytes": 364375,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 70958,
+      "opaquePixels": 54,
+      "sha256": "04745909610d7764b6d8f4345f1489fa220ceea7ef8184acc8ef4009be1f087e",
+      "componentSelection": {
+        "seed": [
+          1000,
+          900
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        432,
+        463
+      ],
+      "anchor": {
+        "x": 0.025,
+        "y": 0.5,
+        "edge": "right"
+      }
+    },
+    {
+      "file": "claude-top-rest.png",
+      "source": "Claude/25469f76-e7d9-4039-9dfc-79dd6bdec50e.png",
+      "sourceSha256": "5bb7f61ec738dfc2bb9857d92b2b9abfa54f943a436c6f1e7b106a6b650d5a1e",
+      "rectangle": [
+        0,
+        876,
+        646,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        1,
+        638,
+        485
+      ],
+      "size": [
+        560,
+        425
+      ],
+      "bytes": 384307,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 85463,
+      "opaquePixels": 79,
+      "sha256": "7178de7504de1d6f8e45dacd8adadadcd64167667add770b6f4a6f3af961a214",
+      "componentSelection": {
+        "seed": [
+          350,
+          1100
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        638,
+        484
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.905,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "claude-side-portrait.png",
+      "source": "Claude/43ce0215-b726-4e64-be27-ea09e2aa0786.png",
+      "sourceSha256": "4110bb6b41f2ce39c85785aafa6a9694f1079ee84fae13986f73d93628a618af",
+      "rectangle": [
+        0,
+        0,
+        612,
+        826
+      ],
+      "alphaTrim": [
+        0,
+        0,
+        612,
+        825
+      ],
+      "size": [
+        415,
+        560
+      ],
+      "bytes": 413628,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 69855,
+      "opaquePixels": 486,
+      "sha256": "dbbfeb488fafbc601e5579fa5411432a45f6e60c658052a8c1cc7b4b4cb2a4e8",
+      "componentSelection": {
+        "seed": [
+          300,
+          400
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        612,
+        825
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.985,
+        "edge": "bottom"
+      }
+    },
+    {
+      "file": "kimi-top-rest.png",
+      "source": "kimi/90c9d416-7c74-40dc-a2e9-dfc77ecc9e63.png",
+      "sourceSha256": "4f7d5c3f443b1b739417b383444ccdf0b99a615db03e3f8badd795e9ca88f4df",
+      "rectangle": [
+        0,
+        914,
+        637,
+        1368
+      ],
+      "alphaTrim": [
+        5,
+        10,
+        628,
+        433
+      ],
+      "size": [
+        560,
+        380
+      ],
+      "bytes": 368476,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 61730,
+      "opaquePixels": 180,
+      "sha256": "4824e38c1178201d8d0ee1870b4524d91ab735541fa553be3816f991c06f2967",
+      "componentSelection": {
+        "seed": [
+          300,
+          1160
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        623,
+        423
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.965,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "kimi-side-reading.png",
+      "source": "kimi/5addd33c-7c09-48d7-87f6-3bd3529b3880.png",
+      "sourceSha256": "ecbe87cc4c4fec7871adccc467fd2910555affdad5ea48ec94bd412b329c5200",
+      "rectangle": [
+        619,
+        824,
+        1150,
+        1368
+      ],
+      "alphaTrim": [
+        1,
+        6,
+        523,
+        534
+      ],
+      "size": [
+        522,
+        528
+      ],
+      "bytes": 475294,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 92903,
+      "opaquePixels": 71,
+      "sha256": "2c61cf86e552f64d550ef395ed45afa5656aca30c9b858b1684a380e99572689",
+      "componentSelection": {
+        "seed": [
+          900,
+          1100
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        522,
+        528
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.985,
+        "edge": "bottom"
+      }
+    },
+    {
+      "file": "grok-top-rest.png",
+      "source": "grok/a67ae6aa-9c62-4494-af8e-bb0f0acfa652.png",
+      "sourceSha256": "b48a2727e4cef96c042a2bca4b7b97b339a0012667699701acac876ec77009bc",
+      "rectangle": [
+        0,
+        886,
+        645,
+        1368
+      ],
+      "alphaTrim": [
+        7,
+        1,
+        639,
+        470
+      ],
+      "size": [
+        560,
+        416
+      ],
+      "bytes": 397741,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 73415,
+      "opaquePixels": 255,
+      "sha256": "95239d8981d8203e0d1a7eebf2275d10ce179543652f2a0fb096a6eb00e00c73",
+      "componentSelection": {
+        "seed": [
+          300,
+          1160
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        632,
+        469
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.975,
+        "edge": "top"
+      }
+    },
+    {
+      "file": "grok-top-upset.png",
+      "source": "grok/b9b88305-2704-4a6a-8a75-91854717bac2.png",
+      "sourceSha256": "e4ef2c730cf2c34c507466657a9e039f22695848942e118a3afbdf8977f52478",
+      "rectangle": [
+        0,
+        948,
+        666,
+        1368
+      ],
+      "alphaTrim": [
+        0,
+        6,
+        660,
+        385
+      ],
+      "size": [
+        560,
+        322
+      ],
+      "bytes": 323171,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 64870,
+      "opaquePixels": 152,
+      "sha256": "fd908c7a251e7c3ff9df62add374aa46f3a42e346cf8389659ea5502afef0c83",
+      "componentSelection": {
+        "seed": [
+          350,
+          1150
+        ],
+        "alphaThreshold": 8,
+        "fringeMargin": 2,
+        "keep": "Main source sprite plus small components wholly inside selected rectangle",
+        "excluded": "Neighbouring source sprites extending beyond selected rectangle"
+      },
+      "croppedSizeBeforeResize": [
+        660,
+        379
+      ],
+      "anchor": {
+        "x": 0.5,
+        "y": 0.97,
+        "edge": "bottom"
+      }
+    },
+    {
+      "file": "qianwen-top.png",
+      "source": "千问/197a3fb1-4631-4781-8f34-a6ff00030db4.png",
+      "sourceSha256": "1b522f2eca7f7a80c609bd07f27ff92338d448638370ba8c4d42f9149be6afcc",
+      "rectangle": [
+        45,
+        846,
+        725,
+        1278
+      ],
+      "alphaTrim": [
+        14,
+        7,
+        663,
+        413
+      ],
+      "size": [
+        560,
+        350
+      ],
+      "bytes": 313657,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 66871,
+      "opaquePixels": 380,
+      "sha256": "45d04bb145dfcf6e3efaf2209210b3c8b09b8cd950567a9331bf2cb59a96aa59",
+      "partitionPolygon": [
+        [
+          45,
+          940
+        ],
+        [
+          120,
+          940
+        ],
+        [
+          154,
+          905
+        ],
+        [
+          185,
+          880
+        ],
+        [
+          220,
+          875
+        ],
+        [
+          230,
+          869
+        ],
+        [
+          240,
+          865
+        ],
+        [
+          250,
+          862
+        ],
+        [
+          260,
+          861
+        ],
+        [
+          270,
+          863
+        ],
+        [
+          280,
+          868
+        ],
+        [
+          282,
+          866
+        ],
+        [
+          285,
+          863
+        ],
+        [
+          290,
+          861
+        ],
+        [
+          293,
+          862
+        ],
+        [
+          296,
+          860
+        ],
+        [
+          303,
+          857
+        ],
+        [
+          310,
+          855
+        ],
+        [
+          316,
+          856
+        ],
+        [
+          322,
+          859
+        ],
+        [
+          327,
+          864
+        ],
+        [
+          331,
+          870
+        ],
+        [
+          332,
+          873
+        ],
+        [
+          335,
+          875
+        ],
+        [
+          337,
+          879
+        ],
+        [
+          336,
+          883
+        ],
+        [
+          344,
+          881
+        ],
+        [
+          350,
+          881
+        ],
+        [
+          360,
+          883
+        ],
+        [
+          370,
+          886
+        ],
+        [
+          448,
+          906
+        ],
+        [
+          491,
+          934
+        ],
+        [
+          543,
+          976
+        ],
+        [
+          574,
+          1030
+        ],
+        [
+          725,
+          1030
+        ],
+        [
+          725,
+          1278
+        ],
+        [
+          45,
+          1278
+        ]
+      ],
+      "croppedSizeBeforeResize": [
+        649,
+        406
+      ],
+      "anchor": {
+        "x": 0.5023,
+        "y": 0.9286,
+        "edge": "top"
+      },
+      "notes": "伏在双臂上的睡姿；横向受力线对齐前臂下缘，发丝允许垂过外框。"
+    },
+    {
+      "file": "qianwen-top-lean.png",
+      "source": "千问/2dca1e22-5747-4570-b450-98c3553aeebb.png",
+      "sourceSha256": "6381e6cfd9fc47c490051aeb72b811721b9a1d6d4d4169ffa375a0382fcb9ad9",
+      "rectangle": [
+        770,
+        65,
+        1230,
+        742
+      ],
+      "alphaTrim": [
+        10,
+        23,
+        460,
+        665
+      ],
+      "size": [
+        393,
+        560
+      ],
+      "bytes": 422489,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 47054,
+      "opaquePixels": 254,
+      "sha256": "f5d1bcf2796a152d837659dd77d9f906fede8920eb081209123186cc93a03130",
+      "partitionPolygon": [
+        [
+          802,
+          65
+        ],
+        [
+          1230,
+          65
+        ],
+        [
+          1230,
+          742
+        ],
+        [
+          950,
+          742
+        ],
+        [
+          898,
+          708
+        ],
+        [
+          859,
+          687
+        ],
+        [
+          831,
+          674
+        ],
+        [
+          808,
+          662
+        ],
+        [
+          787,
+          651
+        ],
+        [
+          780,
+          635
+        ],
+        [
+          783,
+          609
+        ],
+        [
+          797,
+          584
+        ],
+        [
+          780,
+          550
+        ],
+        [
+          780,
+          498
+        ],
+        [
+          792,
+          470
+        ],
+        [
+          780,
+          438
+        ],
+        [
+          797,
+          410
+        ],
+        [
+          771,
+          345
+        ],
+        [
+          803,
+          280
+        ],
+        [
+          786,
+          232
+        ]
+      ],
+      "croppedSizeBeforeResize": [
+        450,
+        642
+      ],
+      "anchor": {
+        "x": 0.4889,
+        "y": 0.9611,
+        "edge": "top"
+      },
+      "notes": "托腮倚靠姿势；横向受力线对齐前臂与扇子所在下缘，袖角允许垂过边框。"
+    },
+    {
+      "file": "qianwen-side.png",
+      "source": "千问/197a3fb1-4631-4781-8f34-a6ff00030db4.png",
+      "sourceSha256": "1b522f2eca7f7a80c609bd07f27ff92338d448638370ba8c4d42f9149be6afcc",
+      "rectangle": [
+        750,
+        755,
+        1200,
+        1278
+      ],
+      "alphaTrim": [
+        9,
+        9,
+        438,
+        523
+      ],
+      "size": [
+        429,
+        514
+      ],
+      "bytes": 327608,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 79341,
+      "opaquePixels": 376,
+      "sha256": "424ce9e61827210819cf2143fffb4e41ffb6628735906e8f42ee59c4eddd6f6a",
+      "partitionPolygon": [
+        [
+          750,
+          900
+        ],
+        [
+          790,
+          890
+        ],
+        [
+          810,
+          842
+        ],
+        [
+          847,
+          801
+        ],
+        [
+          859,
+          781
+        ],
+        [
+          869,
+          778
+        ],
+        [
+          878,
+          780
+        ],
+        [
+          887,
+          799
+        ],
+        [
+          907,
+          784
+        ],
+        [
+          925,
+          774
+        ],
+        [
+          933,
+          775
+        ],
+        [
+          947,
+          781
+        ],
+        [
+          951,
+          779
+        ],
+        [
+          957,
+          772
+        ],
+        [
+          964,
+          768
+        ],
+        [
+          971,
+          766
+        ],
+        [
+          978,
+          768
+        ],
+        [
+          984,
+          769
+        ],
+        [
+          989,
+          769
+        ],
+        [
+          995,
+          771
+        ],
+        [
+          1000,
+          775
+        ],
+        [
+          1002,
+          777
+        ],
+        [
+          1009,
+          774
+        ],
+        [
+          1015,
+          775
+        ],
+        [
+          1020,
+          779
+        ],
+        [
+          1023,
+          784
+        ],
+        [
+          1030,
+          782
+        ],
+        [
+          1100,
+          804
+        ],
+        [
+          1100,
+          767
+        ],
+        [
+          1120,
+          767
+        ],
+        [
+          1120,
+          790
+        ],
+        [
+          1200,
+          790
+        ],
+        [
+          1200,
+          1278
+        ],
+        [
+          750,
+          1278
+        ]
+      ],
+      "croppedSizeBeforeResize": [
+        429,
+        514
+      ],
+      "anchor": {
+        "x": 0.8135,
+        "y": 0.4883,
+        "edge": "left"
+      },
+      "notes": "双手扒住图中右侧竖线；按真实扶边线对齐容器左边，不放中央，不镜像。"
+    },
+    {
+      "file": "qianwen-side-alt.png",
+      "source": "千问/2dca1e22-5747-4570-b450-98c3553aeebb.png",
+      "sourceSha256": "6381e6cfd9fc47c490051aeb72b811721b9a1d6d4d4169ffa375a0382fcb9ad9",
+      "rectangle": [
+        857,
+        752,
+        1198,
+        1265
+      ],
+      "alphaTrim": [
+        9,
+        4,
+        326,
+        499
+      ],
+      "size": [
+        317,
+        495
+      ],
+      "bytes": 298460,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 37636,
+      "opaquePixels": 151,
+      "sha256": "49eb7144411a10d8dc199a1ea78543b1a26746969f67c583cee8c410f9d7643b",
+      "partitionPolygon": [
+        [
+          857,
+          752
+        ],
+        [
+          1198,
+          752
+        ],
+        [
+          1198,
+          1265
+        ],
+        [
+          980,
+          1265
+        ],
+        [
+          981,
+          1210
+        ],
+        [
+          983,
+          1150
+        ],
+        [
+          950,
+          1121
+        ],
+        [
+          894,
+          1084
+        ],
+        [
+          877,
+          994
+        ],
+        [
+          857,
+          955
+        ]
+      ],
+      "croppedSizeBeforeResize": [
+        317,
+        495
+      ],
+      "anchor": {
+        "x": 0.9621,
+        "y": 0.503,
+        "edge": "left"
+      },
+      "notes": "困倦扒边姿势；图中竖线固定对齐容器左边，保持完整帽饰、双手和辫结。"
+    }
+  ],
+  "sourceCredit": "Project-generated unofficial fan-made AI illustrations used as decorative assets. Source paths identify project generation-stage originals for crop reproducibility; they are not third-party author credits. No affiliation, endorsement, or official status is claimed for the referenced AI services."
+}

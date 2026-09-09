@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>可揉颜表情 · 开发检查页</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="stage-decor.css">
+<link rel="stylesheet" href="motion.css">
+</head>
+<body>
+  <main class="workbench">
+    <header class="page-heading">
+      <p class="eyebrow">TEXT MEMORY / DEVELOPER LAB</p>
+      <h1>每一种表情，都有来处。</h1>
+      <p>这里使用实际矢量、软体、指针交互和状态决议模块。全部事件均为<strong>开发模拟，不代表真实业务验收</strong>；不读写资料库、不请求授权、不发送聊天。</p>
+    </header>
+
+    <section class="controls" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">表情检查</h2>
+      <div class="control-grid">
+        <label>角色<select id="persona"></select></label>
+        <label>数据来源<select id="catalog-kind"><option value="v2">V2.1 原库 · 224 条</option><option value="v3-recipe">V3 补充配方 · 126 条</option><option value="v3-interaction">V3 补充揉搓 · 42 条</option></select></label>
+        <label class="span-two">逐条表情<select id="expression"></select></label>
+      </div>
+      <div class="button-row"><button id="previous" type="button">上一条</button><span id="position"></span><button id="next" type="button">下一条</button></div>
+      <div class="control-grid">
+        <label>统一预览阶段<select id="phase"><option value="enter">进入 enter</option><option value="main">主反应 main</option><option value="hold" selected>保持 hold</option><option value="recover">恢复 recover → exit</option></select></label>
+        <label>右栏宽度<select id="panel-width"><option value="280">280 px</option><option value="320" selected>320 px</option><option value="400">400 px</option></select></label>
+      </div>
+      <div class="check-row"><label><input id="short-height" type="checkbox">低高度面板（440 px）</label><label><input id="reduced" type="checkbox">减少动态</label></div>
+      <div class="button-row"><button id="preview-feedback" type="button">开发预览：显示此条反馈</button><button id="catalog-reset" type="button">回到表情预览</button></div>
+      <p id="feedback-eligibility" class="hint"></p>
+      <p class="hint">纯揉搓、轻点、待机与空白点击不会打开反馈。只有右侧本体轮廓可揉；外侧显示层完全穿透指针。</p>
+    </section>
+
+    <section class="controls" aria-labelledby="simulation-title">
+      <h2 id="simulation-title">按钮与同源状态检查</h2>
+      <p class="hint">这些按钮只调用真实 presentation controller 的本地模拟事件。结果需要手动点击，不用定时器伪造成功。</p>
+      <label>模拟结果语义<select id="semantic"></select></label>
+      <div class="button-row"><button id="simulate-begin" type="button">开发模拟：开始处理</button><button id="simulate-result" type="button" disabled>开发模拟：返回所选结果</button></div>
+      <p id="simulation-status" role="status">尚未开始模拟操作。</p>
+    </section>
+
+    <section class="controls" aria-labelledby="metrics-title">
+      <h2 id="metrics-title">真实指针与帧采样</h2>
+      <div class="button-row"><button id="record-start" type="button">开始 30 秒真实交互计时</button><button id="record-stop" type="button" disabled>结束记录</button></div>
+      <p id="record-status" role="status">尚未记录。开始后请实际揉搓右侧本体；页面不会自动驱动鼠标或模拟受力。</p>
+      <dl class="metrics"><div><dt>物理状态</dt><dd id="physics-state">none</dd></div><div><dt>有效抓取</dt><dd id="grab-count">0</dd></div><div><dt>方框空白按下</dt><dd id="blank-count">0</dd></div><div><dt>业务调用</dt><dd>0（此页面无业务接线）</dd></div></dl>
+      <pre id="performance-output">没有测量数据。</pre>
+      <p class="hint">帧耗时仅记录本页 requestAnimationFrame 回调中的物理计算与 SVG 更新脚本；帧间隔另列，不冒充完整浏览器渲染耗时或固定帧率达标。</p>
+    </section>
+
+    <section class="controls" aria-labelledby="snapshot-title">
+      <h2 id="snapshot-title">当前共享快照</h2>
+      <p id="sync-summary"></p>
+      <pre id="snapshot-output"></pre>
+      <details><summary>最近的同文档双端呈现时序</summary><pre id="timeline-output"></pre></details>
+    </section>
+
+    <section class="controls source-notice">
+      <h2>来源与验收边界</h2>
+      <p>V2.1 的 224 条原状态、复杂／紧凑文本与主反应均完整保留。V3 的 126 配方＋42 揉搓差分为独立补充，没有替换原库。</p>
+      <p>用户收到的是说明文档，没有原 manifest 压缩包。ASCII、矢量部件与阶段参数标记为 <code>reconstructed</code>，不能称为原包解压结果。</p>
+      <p>当前为<strong>同文档 DOM 右栏检查</strong>。原生 sidePanel 跨文档位置、授权页面、导航清理及真实操作回执须单独验收；这里通过不代表原生外绘已通过。</p>
+      <pre id="provenance-output"></pre>
+    </section>
+  </main>
+
+  <aside id="test-sidebar" class="test-sidebar" aria-label="开发检查右侧栏">
+    <header class="sidebar-header"><span id="sidebar-persona">ChatGPT</span><span class="test-pill">开发预览</span></header>
+    <section id="main-card" class="main-card" aria-label="顶部本体方框">
+      <div id="main-stage" class="main-stage">
+        <span class="stage-decor" aria-hidden="true" data-soft-noninteractive>
+          <span class="stage-star s1">✦</span><span class="stage-star s2">·</span>
+          <span class="stage-star s3">✧</span><span class="stage-star s4">⋆</span>
+          <span class="stage-star s5">·</span><span class="stage-star s6">✧</span>
+          <span class="stage-star s7">⋆</span><span class="stage-star s8">✦</span>
+          <span class="stage-margin-note">慢慢想 · 轻轻揉</span><span class="stage-margin-code">MEMORY</span>
+        </span>
+      </div>
+    </section>
+    <div class="sidebar-scroll">
+      <div class="sidebar-tools"><button id="keyboard-poke" type="button">键盘轻戳本体</button><button id="dismiss-feedback" type="button" disabled>收起反馈</button></div>
+      <p id="layout-status" role="status"></p>
+      <p id="body-status">原表情预览，无业务操作。</p>
+      <h2 id="expression-title"></h2>
+      <p class="field-name">原复杂文本</p><pre id="rich-text" class="source-face"></pre>
+      <p class="field-name">原紧凑文本 / 重建 ASCII</p><pre id="compact-text" class="source-face"></pre>
+      <p class="field-name">原主反应</p><p id="main-reaction"></p>
+      <details><summary>当前条目数据与来源</summary><pre id="entry-output"></pre></details>
+      <section class="scroll-fixture"><h3>滚动检查区</h3><p>滚动这里不会移动外侧反馈的垂直锚点；顶部本体在普通高度保持可见。</p><p>原资料库与记忆功能没有接入本开发页。</p><p>窄屏如果无法容纳完整外框，将明确降级为栏内中部，而不会声称符合正常外侧布局。</p><p>低高度面板允许整栏滚动以保留方框比例。</p><p>检查底部：反馈仍应按可见面板中点定位。</p></section>
+    </div>
+  </aside>
+
+  <div id="feedback-bubble" class="feedback-bubble" hidden aria-hidden="true" data-soft-noninteractive>
+    <div id="feedback-face"></div>
+    <p id="feedback-caption">开发模拟</p>
+  </div>
+  <script type="module" src="gallery.js"></script>
+</body>
+</html>

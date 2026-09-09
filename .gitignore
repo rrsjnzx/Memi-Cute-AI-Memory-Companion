@@ -1,0 +1,35 @@
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node / Python cache
+node_modules/
+__pycache__/
+*.py[cod]
+coverage/
+.cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local browser data
+chrome-profile/
+edge-profile/
+browser-profile/
+User Data/
+
+# Generated standalone-test copy
+/tests/standalone/product/
+/tests/standalone/qa/production-adapters/
+/tests/standalone/source-provenance.json
+
+# Generated archives / logs
+*.zip
+*.sha256
+*.log

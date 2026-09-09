@@ -1,0 +1,68 @@
+/* Main-stage decoration only: never mounted in the feedback face or bubble. */
+:is(#soft-body-stage,#main-stage){position:relative}
+:is(#soft-body-stage,#main-stage)>.stage-decor{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  border-radius:inherit;
+  pointer-events:none;
+  user-select:none;
+  -webkit-user-select:none;
+  color:var(--site-accent,var(--accent,#75658c));
+  z-index:0;
+}
+.stage-decor *{pointer-events:none!important}
+.stage-decor::before{
+  content:"";
+  position:absolute;
+  width:29px;
+  right:18px;
+  top:29%;
+  border-top:1px solid currentColor;
+  opacity:.16;
+}
+.stage-star{
+  position:absolute;
+  line-height:1;
+  font-family:"Segoe UI Symbol","Microsoft YaHei",sans-serif;
+  font-size:var(--star-size,14px);
+  font-weight:400;
+  opacity:.38;
+  animation:stage-twinkle var(--star-period,8s) ease-in-out var(--star-delay,0s) infinite;
+}
+.stage-star.s1{left:78%;top:20%;--star-size:24px;--star-period:9.2s;--star-delay:-2.8s}
+.stage-star.s2{left:55%;top:27%;--star-size:11px;--star-period:7.8s;--star-delay:-5.5s}
+.stage-star.s3{left:16%;top:32%;--star-size:19px;--star-period:10.2s;--star-delay:-1.2s}
+.stage-star.s4{left:63%;top:38%;--star-size:9px;--star-period:8.8s;--star-delay:-6.2s}
+.stage-star.s5{left:5.5%;top:67%;--star-size:13px;--star-period:9.8s;--star-delay:-4.1s}
+.stage-star.s6{right:3.5%;top:52%;--star-size:12px;--star-period:11s;--star-delay:-7.4s}
+.stage-star.s7{left:26%;top:80%;--star-size:16px;--star-period:8.6s;--star-delay:-3.8s}
+.stage-star.s8{right:16%;top:79%;--star-size:22px;--star-period:10.6s;--star-delay:-.8s}
+.stage-margin-note,.stage-margin-code{
+  position:absolute;
+  font-family:inherit;
+  font-size:8px;
+  font-weight:500;
+  line-height:1.4;
+  white-space:nowrap;
+  opacity:.49;
+}
+.stage-margin-note{left:17px;bottom:15px;letter-spacing:.14em}
+.stage-margin-code{right:17px;top:16px;letter-spacing:.18em;font-size:7px;opacity:.4}
+@keyframes stage-twinkle{
+  0%,100%{opacity:.23}
+  48%{opacity:.58}
+  72%{opacity:.4}
+}
+[data-soft-reduced="true"] .stage-star,
+.reduced .stage-star{animation:none;opacity:.38}
+[data-soft-page-hidden="true"] .stage-star,
+[data-page-hidden="true"] .stage-star,
+[data-soft-hidden="true"] .stage-star,
+[hidden] .stage-star{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.stage-star{animation:none;opacity:.38}}
+@media(max-width:300px){
+  .stage-star.s1{--star-size:21px}
+  .stage-star.s8{--star-size:18px}
+  .stage-margin-note{font-size:7px;letter-spacing:.09em}
+}
