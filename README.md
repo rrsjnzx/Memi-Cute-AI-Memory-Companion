@@ -81,3 +81,11 @@ LICENSE                     代码许可证
 ## 说明
 
 本项目不隶属于或代表上述 AI 服务提供商。网页 DOM 和站点风控策略可能随时变化，因此站点适配需要以实际浏览器表现为准。
+
+## Inspiration & Acknowledgements
+
+The soft interactive AI blob was inspired by an idea I encountered while working on a worldbook status-bar UI. That concept encouraged me to make the AI interface feel more expressive, tactile, and playful rather than purely functional.
+
+The current mascot system, interaction mechanics, expressions, character-specific behaviors, and memory integration were independently redesigned and developed for Memi.
+
+Special thanks to the original creator of that status-bar concept for the inspiration.
